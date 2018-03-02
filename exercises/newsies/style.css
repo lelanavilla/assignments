@@ -1,0 +1,61 @@
+h1{
+font-family: Arial;
+font-size:80px;
+text-align:center;
+font-weight: bold;
+background-color: black;
+color:white;
+}
+.title{
+    font-size:45px;
+
+}
+.article{
+
+
+}
+body{
+position:relative;
+}
+.classified-section{
+position: absolute;
+top:800px;
+left: 20px;
+border: 5px black solid;
+width: 400px;
+height:auto;
+
+}
+.classifieds-title{
+
+}
+.classifieds-header{
+    font-size: 69px;
+    font-weight: bold;
+
+
+}
+.posting{
+    position: absolute;
+    right: 200px;
+    background-color: red
+
+}
+.main-img{
+width: 840px;;
+height:600px;
+position:absolute;
+left: 100px;
+}
+.ad{
+
+}
+.article-text{
+
+}
+.main-img{
+
+}
+p{
+    
+}
