@@ -73,8 +73,9 @@ names.push(peopleArray[i].name);
   console.log(names);
   console.log(occupations);
 
-  var arr= [];
+  var grid= {};
   for( var i = 0; i < 3; i++){
+      var num= [i];
       for(var j =0; i < 3; j++){
       arr[i][j];
       }
