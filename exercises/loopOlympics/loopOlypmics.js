@@ -66,9 +66,16 @@ var peopleArray = [
       if( i % 2 === 0){
 names.push(peopleArray[i].name);
 } else {
-    occupations.push(peopleArray[i].occupation)
+    occupations.push(peopleArray[i].occupation);
 }
 
   }
   console.log(names);
   console.log(occupations);
+
+  var arr= [];
+  for( var i = 0; i < 3; i++){
+      for(var j =0; i < 3; j++){
+      arr[i][j];
+      }
+  }

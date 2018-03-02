@@ -12,7 +12,7 @@ var person = {
 name : "Sam",
 age: 14
 }
-if(person.age >= 18 && person.name(0) === "B" ){
+if(person.age >= 18 && person.name === "B" ){
     console.log("is allowed to go to the movie"); 
 }else {
     console.log("is not allowed to go to the movie");
@@ -32,15 +32,11 @@ if((1 >= 2 && 2 === 4) || (3 * 4 ) > 10 && (5 + 10) > 10) {
 
 
 if (typeof dog ==="string"){
+     console.log(string);
+
 
 };
 if (typeof true === Boolean){
-return true
+console.log(Boolean);
 };
-if(var === undefined){
     
-};
-var abc  = 12;
-if(< 12 || let)
-
-
