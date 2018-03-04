@@ -1,15 +1,30 @@
-body{
-    box-sizing: border-box;
-    width: 355px;
-    height:355px;
+*{
+box-sizing: border-box;
+font-size:0px;
 }
-
-div {
-    box-sizing: border-box;
-    width: 50%;
-    height: 100px;
-    border: 5px solid white;
-    float: left;
-    background-color:  #F5C6D6;
-    align-content: center;
+div{
+    height:200px;
+    display: inline-block;
+    border: 5px solid black;
+    margin: auto;
+}
+.pink-all{
+    background-color: #F5C6D6;
+    width:100%;
+}
+.magenta-four{
+    background-color: #EE2E84;
+    width: 25%;
+}
+.lightblue-half{
+    background-color: #85CFD8;
+    width:50%;
+}
+.green-three-four{
+    background-color: #8DC63F;
+    width: 75%;
+}
+.orange-quarter{
+    background-color: #E76E34;
+    width:25%;
 }

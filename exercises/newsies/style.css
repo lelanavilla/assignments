@@ -1,99 +1,12 @@
-    * {
-        box-sizing: border-box;
-    }
-    h1 {
-        border: 1px solid black;
-        height: 200px;
-        width: 300px;
-        padding: 10px;
-    }
-
-/* h1{
-font-family: Arial;
-font-size:80px;
-text-align:center;
-font-weight: bold;
-background-color: black;
-color:white;
+*{
+    box-sizing: border-box
 }
-.title{
-    font-size:55px;
-    text-align: center;
-    text-shadow: 4px 2px darkmagenta;
-    font-family: Arial, Helvetica, sans-serif
-}
-.article-section:{
-position: relative;
-width: 400px;
-height:auto;
-
-
-} */
-body{
-position:relative;
-}
-.classified-section{
-position: absolute;
-left: 20px;
-border: 5px black solid;
-width: 400px;
-height: 600px;
+h1{
 
 }
-.classifieds-title{
-font-family: Arial, Helvetica, sans-serif;
-font-size: 40px;
-font-weight: bold;
-text-align: center;
-position:absolute;
-
-
-}
-
-
-
-.posting{
-    position: absolute;
-    text-align: center;
-    font-weight:bold;
-    width: 200px;
-    left:100px;
-     top: 400px;
-    
-
-}
-.main-img{
-width: 720px;
-height:600px;
-position:absolute;
-right: 20px;
-float: right;
-
-}
-#ads{
-position: absolute;
-width: 400px;
-height: 300px;
-top:40px;
-
-}
-.article-text{
-    position: absolute;
-    width: 700px;
-    right:10px;
-    top: 1040px;
-    font-size: 22px;
-
-}
-
 p{
-   font-size:18px; 
-   position: absolute:
-   width: 400px:
-   height: 400px; 
-   font-weight:bold;
+
 }
-#a{
-    position: absolute:
-    font-size:20px;
-    width: 200px;
+h2{
+    
+}
