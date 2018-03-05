@@ -1,5 +1,5 @@
 var removeA = function(str) {
-return str.indexOf().slice(a);
+var newString = str.replace(/a+/ig, "");
 
 }
-removeA();
+removeA("lelana");

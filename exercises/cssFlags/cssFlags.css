@@ -1,0 +1,70 @@
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.france {
+    box-sizing: border-box;
+    width: 580px;
+    height: 387px;
+    inline-size: 33%;
+    background-color: blue 33%;
+    background-color: red 33%;
+    background-color: white 33%
+
+}
+
+
+.germany {
+    width: 580px;
+    height: 348px;
+}
+
+.madagascar {
+    width: 580px;
+    height: 387px;
+}
+
+.switzerland {
+    width: 580px;
+    height: 580px;
+}
+
+.sweden {
+    width: 580px;
+    height: 363px;
+}
+
+.gambia {
+    width: 580px;
+    height: 387px;
+}
+
+.tonga {
+    width: 580px;
+    height: 387px;
+}
+
+.japan {
+    width: 580px;
+    height: 387px;
+}
+
+.greece {
+    width: 580px;
+    height: 387px;
+}
+
+.niger {
+    width: 580px;
+    height: 497px;
+}
+
+.maldives {
+    width: 580px;
+    height: 387px;
+}
+
+}

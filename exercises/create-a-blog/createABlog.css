@@ -1,0 +1,33 @@
+body{
+box-sizing: border-box;
+position: relative;
+}
+nav{
+    position:fixed;
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    text-align: justify;
+}
+section .blog-style{
+    width: 30%;
+    height:auto;
+    
+}
+.blog-entry-heading{
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.blog-entry{
+    font-size:20px;
+}
+.date{
+    font-weight:bold;
+    font-style: italic;
+}
+a{
+    position: absolute;
+    width:30%;
+    height:30%;
+}
