@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    width:1000px;
+    height:auto;
+}
+@media(max-width:100%):{
+    .img1{
+        max-width:100%;
+        max-height:auto;
+        min-width: auto;
+    min-height:100%;
+    }
+    .img2{
+        max-width:100%;
+        max-height:auto;
+        min-width: auto;
+    min-height:100%;
+    }
+.img3{
+    max-width:100%;
+    max-height:auto;
+    min-width: auto;
+min-height:100%;
+    )
+}

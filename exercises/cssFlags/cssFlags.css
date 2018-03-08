@@ -1,70 +1,179 @@
-body {
+*{
     box-sizing: border-box;
-    width: 100%;
-    height: auto;
-    position: relative;
+    margin:0;
+    font-style:0;
+}
+body{
+
 }
 
+div .france .france-child-one .france-child-two{ 
+    display: inline-block;
+    border: 2px solid black;
+position:relative;
+}
 .france {
-    box-sizing: border-box;
-    width: 580px;
-    height: 387px;
-    inline-size: 33%;
-    background-color: blue 33%;
-    background-color: red 33%;
-    background-color: white 33%
+width: 290px;
+height:174px;
+position:absolute;
+border-top:2px solid gray;
+border-left:2px solid gray;
+border-bottom: 2px solid gray;
+background-color: white;
+display: inline-block;
 
 }
-
+.france-child-two{
+    width: 90px;
+    height:174px;
+    background-color: blue;
+    position:absolute;
+    right:0px;
+    
+    display: inline-block;
+}
+.france-child-one{
+    width: 120px;
+    height: 174px;
+    background-color:red;
+    position:absolute;
+    right: 80px;
+    
+    displaY: inline-block;
+}
 
 .germany {
-    width: 580px;
-    height: 348px;
+    width: 290px;
+    height: 174px;
+    background-color:black;
+position:absolute;
+top: 195px;
 }
-
+.germany-child-one{
+    position:absolute;
+    width: 290px;
+    height:58px;
+    top: 235px;
+    background-color: red;
+}
+.germany-child-two{
+    width: 290px;
+    height: 58px;
+    position:absolute;
+    top: 194px;
+    background-color: yellow;
+}
 .madagascar {
-    width: 580px;
-    height: 387px;
+    width: 290px;
+    height: 183px;
+    position:absolute;
+    top:374px;
+    background-color: white;
+    border: 2px solid gray;
+}
+.madagascar-child-one{
+    position:absolute;
+    width:290px;
+    top:375px;
+    background-color: red;
+    height:84px;
+    left: 0px;
+
+}
+.madagascar-child-two{
+position:absolute;
+top:458px;
+left:0px;
+width:290px;
+height:97px;
+background-color: green;
+}
+.switzerland {
+    width: 290px;
+    height: 190px;
+    position: absolute;
+    background-color: red;
+    top: 620px;
 }
 
-.switzerland {
-    width: 580px;
-    height: 580px;
+.switz-child-one {
+    position: absolute;
+    width: 45px;
+    height: 150px;
+    background-color: white;
+    top: 650px;
+    left: 44px;
+}
+
+.switz-child-two {
+    width: 45px;
+    height: 65px;
+    background-color: white;
+    top: 620px;
+    left: 55px;
+    position: absolute;
 }
 
 .sweden {
     width: 580px;
     height: 363px;
+    position: absolute;
+    background: #0f6b94;
+    top: 1520px;
 }
 
-.gambia {
-    width: 580px;
-    height: 387px;
-}
-
-.tonga {
-    width: 580px;
-    height: 387px;
-}
-
-.japan {
-    width: 580px;
-    height: 387px;
-}
-
-.greece {
-    width: 580px;
-    height: 387px;
-}
-
-.niger {
-    width: 580px;
-    height: 497px;
-}
-
-.maldives {
-    width: 580px;
-    height: 387px;
-}
-
-}
+.sweden-child-one {
+    sweden-child-one {
+        background-color: #ffe107;
+        width: 580px;
+        height: 90px;
+        position: absolute;
+        top: 1660px;
+    }
+    .sweden-child-two {
+        position: absolute;
+        background-color: #ffe107;
+        width: 90px;
+        height: 363px;
+        left: 30px;
+        top: 1520px;
+    }
+    .gambia {
+        width: 580px;
+        height: 175px;
+        position: 1840px;
+        background-color:
+    }
+    .gambia-child-one {
+        width: 580px;
+        height:175px;
+        position:absolute;
+        background-color: 
+    }
+    .gambia-child-two {
+        width: 580px;
+        height:175px;
+        position:absolute;
+        top:
+        background-color:
+    }
+    .tonga {
+        width: 580px;
+        height: 387px;
+    }
+    .japan {
+        width: 580px;
+        height: 387px;
+    }
+    .greece {
+        width: 580px;
+        height: 387px;
+    }
+    .niger {
+        width: 580px;
+        height: 497px;
+    }
+    .maldives {
+        width: 580px;
+        height: 387px;
+    }
