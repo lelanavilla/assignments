@@ -1,5 +1,10 @@
-var removeA = function(str) {
-var newString = str.replace(/a+/ig, "");
-
+ var name= "lelana";
+ function removeA() {
+    var removed = "";
+    for( var i =0; i < name.length; i++){
+        if( i === "a"){
+removed.push(i);
+    }
 }
-removeA("lelana");
+return removed;
+}
