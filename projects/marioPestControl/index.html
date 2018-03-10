@@ -4,7 +4,48 @@
         <title>
             Mario Pest Control
         </title>
+        <link rel="stylesheet" href="mario.css"/>
     </head>
     <body>
         
-    </body>
+            <a href="https://imgur.com/5rWK73v"><img src="https://i.imgur.com/5rWK73v.jpg" title="source: imgur.com" /></a>
+    <section class="baddies-list" id="baddies"><h1>Baddies</h1>
+        <ul>
+            <li id="goombas"><h2>Goombas</h2><input 
+                <h3> 3 Coins</h3> </li>
+                <li id="goombas"><h2>Bob-ombs</h2>
+                    <h3> 7 Coins</h3> </li>
+                    <li id="cheep-cheep"><h2>Cheep-Cheeps</h2>
+                        <h3> 3 Coins</h3> </li>
+        </ul>
+    </section>
+    <FORM name="total" action="" method="GET">
+            Number of Baddies Caught Today: <BR>
+            <input type="text" name="inputbox" value=""><P>
+            <input type="button" name="button" value="Click" onClick="testResults(this.form/\d\/)">
+                <input type="button" name="button2" value="Write" onClick="writeText(this.form)">
+            </form>
+                
+            
+    <!-- <section class="baddies-imgs">
+            <ul>
+
+                <a href="https://imgur.com/o1rCrFC"><img src="https://i.imgur.com/o1rCrFC.png" title="source: imgur.com" /></a>
+    <br>
+    <a href="https://imgur.com/qjFg0g7"><img src="https://i.imgur.com/qjFg0g7.png" title="source: imgur.com" /></a>
+    <br>
+    <a href="https://imgur.com/Jugvh7J"><img src="https://i.imgur.com/Jugvh7J.jpg" title="source: imgur.com" /></a>
+    <br> --> -->
+<!-- </div>  -->
+    <!-- </section> -->
+    <!-- </section> -->
+    <section>
+        <form name="count" class="count-form" id="running-count-box" col="3" row="1">
+        
+        </form>
+        <script src="marioPestControl.js"></script>
+        <script language="javascript">
+        function testResults (form){
+            var testVar = form.inputbox.value;
+            alert("You added" + testVar + " more Baddies to the total!") </script>
+</body>
