@@ -1,4 +1,4 @@
- var name= "lelana";
+ 
  function removeA() {
     var removed = "";
     for( var i =0; i < name.length; i++){

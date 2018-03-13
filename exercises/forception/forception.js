@@ -1,7 +1,8 @@
-var people = ["Jon", "Jacob", "Jingle", "Heimer", "Schmidt"];  
-var alphabet = "abcdefghijklmnopqrstuvwxyz";  
-var combo = []
+
 function blended(){
+    var people = ["Jon", "Jacob", "Jingle", "Heimer", "Schmidt"];  
+var alphabet = "abcdefghijklmnopqrstuvwxyz";  
+var combo = [];
  alphabet.toUpperCase();
     for(var i =0; i <= 26; i++){
         
@@ -9,12 +10,12 @@ function blended(){
             while(i <= 26 && j === 0 || j === 27){
                 i++;
                 j++;
-             combo.push([j],i);
+           var results=  combo.push(people[j],i);
                                 }
             }
         }
     }
 
-console.log(blended());
+console.log(results);
 
     

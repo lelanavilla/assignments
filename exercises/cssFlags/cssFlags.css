@@ -102,64 +102,92 @@ background-color: green;
     height: 150px;
     background-color: white;
     top: 650px;
-    left: 44px;
+    left: 105px;
 }
 
 .switz-child-two {
-    width: 45px;
-    height: 65px;
+    width: 125px;
+    height: 45px;
     background-color: white;
-    top: 620px;
-    left: 55px;
+    top: 700px;
+    left: 65px;
     position: absolute;
 }
 
 .sweden {
-    width: 580px;
-    height: 363px;
+    width: 290px;
+    height: 181px;
     position: absolute;
     background: #0f6b94;
-    top: 1520px;
+    top: 845px;
 }
 
 .sweden-child-one {
-    sweden-child-one {
         background-color: #ffe107;
-        width: 580px;
-        height: 90px;
+        width: 290px;
+        height: 40px;
         position: absolute;
-        top: 1660px;
+        top: 920px;
+        
     }
     .sweden-child-two {
         position: absolute;
         background-color: #ffe107;
-        width: 90px;
-        height: 363px;
+        width: 40px;
+        height: 181px;
         left: 30px;
-        top: 1520px;
+        top: 845px;
     }
     .gambia {
-        width: 580px;
-        height: 175px;
-        position: 1840px;
-        background-color:
+        width: 290px;
+        height: 75px;
+        background-color:red;
+        position:absolute;
+        top:1040px;
+
     }
     .gambia-child-one {
-        width: 580px;
-        height:175px;
+        width: 290px;
+        height:55px;
         position:absolute;
-        background-color: 
+        background-color: darkblue;
+        top:1125px;
     }
     .gambia-child-two {
-        width: 580px;
-        height:175px;
+        width: 290px;
+        height:75px;
         position:absolute;
-        top:
-        background-color:
+        top:1190px;
+        background-color: green;
     }
     .tonga {
-        width: 580px;
-        height: 387px;
+        width: 290px;
+        height: 191px;
+        position:absolute;
+        background-color:red;
+        top:1300px;
+    }
+    .tonga-child-one{
+        width: 154px;
+        height:104px;
+        background-color:white;
+        position: absolute;
+        top:1350px;
+
+    }
+    .tonga-child-two{
+        width: 34px;
+        height:54px;
+        background-color:red;
+        position: absolute;
+        top:1355px;
+    }
+    .tonga-child-three{
+        width: 134px;
+        height:104px;
+        background-color: white;
+        position: absolute;
+        top:1300px;
     }
     .japan {
         width: 580px;
