@@ -1,70 +1,102 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="vschool week two biz time project">
-	  <meta name="keywords" content="Vschool Business Time Project">
-  	<meta name="author" content="Lelana Villa">
-    <title>Mario's Vacation| Welcome</title>
+    <meta name="keywords" content="Vschool Business Time Project">
+    <meta name="author" content="Lelana Villa">
+    <title>Mario's Vacations</title>
     <link rel="stylesheet" href="bizTime.css">
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div id="branding">
-          <h1><span class="highlight">Acme</span> Web Design</h1>
-        </div>
-        <nav>
-          <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RaleWay">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" </head>
 
-    <section id="showcase">
-      <div class="container">
-        <h1>Affordable Professional Web Design</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p>
-      </div>
-    </section>
+    <body class="light-gray">
+        <!--HEADER -->
+        <header class=" main-img-container main-img-content hide-small">
+            <img class="main-background-image" src="https://i.imgur.com/9lVdAbV.jpg" alt="Marios Vacations"></img>
+            <div class="middle-display-box">
+                <div class="mid-bar dark-blue-box">
+                    <button class="mid-display-box-button mid-box-item tab-link" onclick="openLink(event," Destinations ");">Destinations</button>
+                    <button class="mid-display-box-button mid-box-item tab-link" onclick="openLink(event," Hotel ");">Hotel</button>
+                    <button class="mid-display-box-button mid-box-item tab-link" onclick="openLink(event," Attractions ");">Attractions</button>
+                </div>
+                <!-- TABS -->
+                <div id="destinations" class="container white-tab tab-padding-16 myLink">
+                    <h3> Get more Information on Awesome Vacations</h3>
+                    <div class="row-padding">
+                        <div class="info-top-half">
+                            <input type="text" id="mid-left-input" placeholder="Name">
+                            <input type="text" id="mid-right-input" placeholder="Email">
+                        </div>
+                        <p><button class="brochure-button" id="bro-button"></button></div>
+                    <!-- PAGE -->
+                    <div class="content">
+                        <!--DEALS-->
+                        <div class="deals-container margin-top">
+                            <h3>Travel Specials</h3>
+                            <h6>Up to <strong>50%</strong>Off!</h6>
+                        </div>
+                        <!--IMAGE GRID -->
+                        <div class="large-image row-padding"></div>
+                    </div>
+                    </p>
+                </div>
+            </div>
+            <div id="branding">
+                <h1><span class="highlight">Acme</span> Web Design</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
 
-    <section id="newsletter">
-      <div class="container">
-        <h1>Subscribe To Our Newsletter</h1>
-        <form>
-          <input type="email" placeholder="Enter Email...">
-          <button type="submit" class="button_1">Subscribe</button>
-        </form>
-      </div>
-    </section>
+        <section id="showcase">
+            <div class="container">
+                <h1>Affordable Professional Web Design</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p>
+            </div>
+        </section>
 
-    <section id="boxes">
-      <div class="container">
-        <div class="box">
-          <img src="./img/logo_html.png">
-          <h3>HTML5 Markup</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
-        </div>
-        <div class="box">
-          <img src="./img/logo_css.png">
-          <h3>CSS3 Styling</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
-        </div>
-        <div class="box">
-          <img src="./img/logo_brush.png">
-          <h3>Graphic Design</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
-        </div>
-      </div>
-    </section>
+        <section id="newsletter">
+            <div class="container">
+                <h1>Subscribe To Our Newsletter</h1>
+                <form>
+                    <input type="email" placeholder="Enter Email...">
+                    <button type="submit" class="button_1">Subscribe</button>
+                </form>
+            </div>
+        </section>
 
-    <footer>
-      <p>Acme Web Deisgn, Copyright &copy; 2017</p>
-    </footer>
-  </body>
+        <section id="boxes">
+            <div class="container">
+                <div class="box">
+                    <img src="./img/logo_html.png">
+                    <h3>HTML5 Markup</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+                </div>
+                <div class="box">
+                    <img src="./img/logo_css.png">
+                    <h3>CSS3 Styling</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+                </div>
+                <div class="box">
+                    <img src="./img/logo_brush.png">
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Acme Web Deisgn, Copyright &copy; 2017</p>
+        </footer>
+    </body>
+
 </html>

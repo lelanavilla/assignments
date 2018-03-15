@@ -1,0 +1,33 @@
+{
+    "menu": {
+
+
+        "appetizers": [{
+            "chips": "Lays",
+            "fruit": ["apples", "bananas", "pears"],
+            "vegetables": ["carrots", "celery", "cucumbers"]
+        }],
+
+        "coldSandwiches": [{
+            "turkey": "6in",
+            "ham": "6in",
+            "tuna": "6in"
+        }],
+
+        "hotSandwiches": [{
+            "roastBeef": "6in",
+            "steak": "6in",
+            "blt": "6in"
+        }],
+        "desserts": [{
+            "iceCream": ["vanilla", "chocolate", "strawberry"],
+            "cookies": ["chocolate chip", "oatmeal", "sugar"],
+            "pie": ["pumpkin", "apple", "peach"]
+        }],
+        "drinks": [{
+            "coke": "20oz",
+            "pepsi": "20oz",
+            "sprite": "20oz"
+        }]
+    }
+}
