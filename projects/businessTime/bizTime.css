@@ -1,9 +1,94 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {}
-
-.light-gray {}
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: Raleway, Arial, Helvetica, sans-serif
+    }
+    
+    .container {
+        width: auto;
+        height: inherit;
+    }
+    
+    body {
+        background-color: lightgray;
+    }
+    
+    .main-container {
+        max-width: 1500px;
+    }
+    
+    .main-img-container {
+        width: 1500px;
+        height: 700px;
+    }
+    
+    .main-img-content {}
+    
+    .main-background-image {
+        width: 1500px;
+        height: 700px;
+    }
+    
+    .middle-display-box {
+        width: 65%;
+    }
+    
+    .mid-bar {}
+    
+    .dark-blue-box {
+        border: solid 1.5px rgb(25, 1, 56)
+    }
+    
+    .mid-display-box-button {
+        background-color: rgb(255, 94, 0);
+        color: white;
+        font-weight: bold;
+        letter-spacing: .25em;
+    }
+    
+    .mid-box-item {}
+    
+    .tab-link {}
+    
+    .white-tab {}
+    
+    .tab-padding-16 {
+        padding: 16px;
+    }
+    
+    .myLink {}
+    
+    .row-padding {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .info-top-half {}
+    
+    .mid-left-input {}
+    
+    .mid-right-input {}
+    
+    .brochure-button {}
+    
+    .content {
+        max-width: 1100px
+    }
+    
+    .deals-container {}
+    
+    .margin-top {}
+    
+    .large-img {}
+    
+    .side-img {}

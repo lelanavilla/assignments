@@ -1,1 +1,0 @@
-$.getjson("/json/http://pokeapi.co/api/v2/)

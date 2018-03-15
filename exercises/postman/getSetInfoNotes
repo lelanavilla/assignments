@@ -25,7 +25,7 @@ function myFunc3() {
 // },3000);
 
 // TAKE NOTE OF THE SYNTAX OF SETTIMEOUT ITS FUNCTION THAT TAKES A FUNCTION AND USES ANOTHER FUNCTION AS AN ARGUEMENT CLOSES THE FUNCTION WITH THE CURLY BRACKET FOLLOWED BYA COMMA, AND THE AMOUNT OF TIME TO WAIT IN 1000'S (1000 = 1 SEC) FOLLOWED BY THE ) TO CLOSE THE ARGUEMENT IN THE SETIMTEOUT FUNCTION
-
+//BOOLEANS AND NUMBERS DONT NOT NEED THE ""
 
 // function asyncGETWeatherData(callback) {
 //     var data = "Snowing today";
@@ -49,3 +49,15 @@ request("https://swapi.co/api/planets/", function(err, response, body) {
     }
 
 })
+These requests fall under the CRUDE category based on how they are built
+CRUDE is a philosophy on how APIS are made
+
+a crude app is an application that read, post, delete, update data
+
+
+
+FOUR NAMES OF THE KINDS OF HTTP REQUESTS
+GET - ALLOWS YOU TO GET INFO
+POST - ALLOWS YOU TO CREATE INFO
+DELETE - ALLOWS YOU TO DELETE INFO
+PUT - ALLOWS YOU TO EDIT INFO
