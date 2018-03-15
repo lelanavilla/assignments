@@ -1,0 +1,48 @@
+HOW TO MAKE A GET REQUEST WITH VANILLA JAVASCRIPT EXAMPLE;
+
+var xhr = new XMLHttpRequest();
+
+xhr.onreadystatechange = function () {  
+    if (xhr.readyState == 4 && xhr.status == 200) {
+        var jsonData = xhr.responseText;
+        var data = JSON.parse(jsonData);
+        var name = data.name;
+        document.getElementById("demo1").innerHTML = "jSON results: " + jsonData;
+        document.getElementById("demo2").innerHTML = "Parsed jSON's 'name' property: " + data.name;
+        spaceshipurl = data.starships[0];
+        console.log(spaceshipurl);
+    }
+};
+
+xhr.open("GET", "http://swapi.co/api/people/1/", true);  
+xhr.send();
+
+NOTE**
+xhr makes a new XMLHttpRequest instance with the below constuctor function
+there are four phases to the "state changes"
+
+xhr.status = 200 means the request is "good"
+
+**
+
+IN THE JS FILE YOUD WRITE:
+
+var todoList = document.getElementById("todo-list");
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function (){
+    if(xhr.readyState ===4 && xhr.status === 200{
+        var jsonData = xhr.responseText;
+        var data = JSON.parse(jsonData);
+        console.log(data);
+        for(var i=0; i<data.length;i++){
+            //to represent todo obj
+            var todoObj = data[1];
+        var li = document.createElement("li");
+        li.innerHTML = todoObj.title;
+        todoList.appendChild(li);
+        }
+    }
+    }
+
+xhr.open("GET", "https://api.vschool.io/ben/todo", true);
+xhr.send();
