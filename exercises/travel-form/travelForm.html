@@ -16,8 +16,8 @@
     <div class="main-form">
         <form name="name" id="name" col="1" rows="" resize="auto">
 
-            <input type="text-area" name="fName" id="fName" placeholder="First Name">
-            <input type="text-area" name="lName" id="lName" placeholder="Last Name">
+            <input type="text" name="fName" id="fName" placeholder="First Name">
+            <input type="text" name="lName" id="lName" placeholder="Last Name">
             <input type="number" name="age" id="age" placeholder="Age">
             <h3>
                 <strong>Gender:</strong>
@@ -31,26 +31,34 @@
                         <strong>Travel Destination:</strong>
                     </h3>
                     <select name="locations" id="locations" value="none" multiple>
-                        <option name="locations" id="california" value="california">California</option>
-                        <option name="locations" id="paris" value="paris">Paris</option>
-                        <option name="locations" id="newyork" value="newYork">New York</option>
-                    </select>
-                    <h3>
-                        <strong>Dietary Restrictions:</strong>
-                    </h3>
-                    <label for="dairy">Dairy
+                        <label>Choose an Location:
+                            <select id="locations" name="locations">
+                                <option value="">Select One …</option>
+                                <option value="california">California</option>
+                                <option value="paris">Paris</option>
+                                <option value="new-york">New York</option>
+                            </select>
+                        </label>
+            <option value==<option name="locations" id="california" value="california">California</option>
+            <option name="locations" id="paris" value="paris">Paris</option>
+            <option name="locations" id="newyork" value="newYork">New York</option>
+            </select>
+            <h3>
+                <strong>Dietary Restrictions:</strong>
+            </h3>
+            <label for="dairy">Dairy
                         <input type="checkbox" id="dietDairy" name="diet">
                     </label>
-                    <br>
-                    <label for="gluten">Gluten
+            <br>
+            <label for="gluten">Gluten
                         <input type="checkbox" id="dietGluten" name="diet"> </label>
-                    <br>
-                    <label for="peanut">Peanut
+            <br>
+            <label for="peanut">Peanut
                         <input type="checkbox" id="dietPeanut" name="diet">
                     </label>
-                    <br>
-                    <br>
-                    <button id="submit">Submit</button>
+            <br>
+            <br>
+            <button id="submit">Submit</button>
         </form>
     </div>
 

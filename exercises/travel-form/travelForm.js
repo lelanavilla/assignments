@@ -1,24 +1,32 @@
-function formAlert() {
-    var formElement = document.getElementByID("main-form");
-    var submit = formElemwent.getElementByID("submit");
-    var firstName = formElement("fName").value;
-    var lastName = formElement("lName").value;
-    var age = formElement("age").value;
-    var gender = formElement("gender").value;
-    var location = formElement("locations").value;
-    var diet = [];
-    if (formElement('dairy').checked) {
-         diet.pop(document.getElementById("dairy").value);
-    }
-    if (formElement('gluten').checked) {
-        diet.push(document.getElementById('gluten').value);
-    }
-    if (formElement('peanut').checked) {
-        diet.push(document.getElementById('peanut').value);
-    }
-    submit.addEventListener("click", formalert);
+var travelFrom = document.getElementByID("main-form");
+var submit = document.getElementByID("submit");
+var firstName = travelForm("fName").value;
+var lastName = travelForm("lName").value;
+var age = document.getElementById("age").value;
 
-    alert("First Name: " + firstName + "\nLast Name: " + lastName + "\nAge: " + age + "\nGender: " + gender + "\nTravel Location: " + location + "\nDiet: " + diet + "\nThanks for your time.");
-}
+var gender = document.getElementById("gender");
+if (document.getElementById('mGender').checked) {
+    document.gender.mGender = true;
+} else if (document.getElementById('fGender').checked) {
+    document.gender.fGender = true;
+
+    var location = document("locations").value;
 
 
+    var dairy = document.getElementById("dairy").addEventListener("checked", function(event); {
+                if (travelForm('dairy').checked) {
+                    diet.diary === true;
+                }
+                if (travelForm('gluten').checked) {
+                    diet.push(document.getElementById('gluten').value);
+                }
+                if (travelForm('peanut').checked) {
+                    diet.push(document.getElementById('peanut').value);
+                }
+                travelForm.submit.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    event.target.submit;
+                });
+
+                alert("First Name: " + firstName + "\nLast Name: " + lastName + "\nAge: " + age + "\nGender: " + gender + "\nTravel Location: " + location + "\nDiet: " + diet + "\nThanks for your time.");
+            }
