@@ -28,8 +28,43 @@
 
     <!-- Header -->
     <header class="main-display-container w3-content w3-hide-small" style="max-width:1500px">
-        <img class="w3-image" src="https://i.imgur.com/SnJk8SY.jpg" alt="Mario Vacations" width="1500" height="700">
+        <img class="w3-image" src="https://i.imgur.com/SnJk8SY.jpg" alt="Mario Vacations" width="1500" height="700" <div clas>
+        <div class="w3-display-middle" style="width:65%">
+            <div class="w3-bar w3-black">
+                <button class="w3-bar-item w3-button tablink" onclick="openLink(event,'Destinations');">Destinations</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');">Hotel</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openLink(event,'Attractions');">Attractions</button>
+            </div>
 
+            <!-- Tabs -->
+            <div id="destinations" class="w3-container w3-white w3-padding-16 myLink">
+                <h3>Get More Information on Our Awesome Travel Specials</h3>
+                <div class="w3-row-padding" style="margin:0 -16px;">
+                    <div class="w3-half">
+                        <label>From</label>
+                        <input class="w3-input w3-border" type="text" placeholder="Name">
+                    </div>
+                    <div class="w3-half">
+                        <label>To</label>
+                        <input class="w3-input w3-border" type="text" placeholder="Email">
+                    </div>
+                </div>
+                <p><button class="w3-button w3-dark-grey">Send a Brouchure</button></p>
+            </div>
+
+            <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink">
+                <h3>Check out Our Five Star Hotel</h3>
+
+                <p><button class="w3-button w3-dark-grey">Tour the Hotel</button></p>
+            </div>
+
+            <div id="Car" class="w3-container w3-white w3-padding-16 myLink">
+                <h3>Featured Attractions</h3>
+                <p>Activites for the Whole Family</p>
+                <br>
+                <p><button class="w3-button w3-dark-grey">Upcoming Attractions</button></p>
+            </div>
+        </div>
     </header>
 
     <!-- Page content -->

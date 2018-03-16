@@ -40,7 +40,8 @@
     }
     
     .middle-display-box {
-        width: 65%;
+        width: 75%;
+        height: inherit;
     }
     
     .mid-bar {}

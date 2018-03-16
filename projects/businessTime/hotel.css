@@ -1,0 +1,15 @@
+* {
+    font-family: 'Satisfy', "cursive";
+}
+
+h2 {
+    font-family: 'Satisfy', 'cursive';
+    font-size: 35px;
+    line-height: 1.25em;
+    word-spacing: .5em;
+}
+
+p {
+    font-family: 'Rancho', 'cursive';
+    font-size: 20px;
+}
