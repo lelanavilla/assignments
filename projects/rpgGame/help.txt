@@ -1,0 +1,57 @@
+        Help Documentation
+
+COMMANDS:
+TO WALK:
+WALK FORWARD = press and hold down "W" key,
+BACKWARD =  press  and hold down "B" key,
+RIGHT = press  and hold down "R" key,
+LEFT = press hold down "L" key
+TO STOP WALKING IN ANY DIRECTION = release the key
+
+TO HIDE = press and hold down "H" key,
+TO STOP HIDING, AND CONTINUE WITH GAME = release "H" key
+
+TO STOP AND ASK FOR  ADVICE OR DIRECTIONS = walk in the direction of the character
+ for three key presses, and then press "I" key.
+
+ ATTACK MODE:
+  TO PUNCH:  press "P" key,
+  TO KICK : press "K" key
+
+OTHER ACTIONS
+
+TO GRAB KEY = press "G" key , this will automatically store this item for you.
+TO USE KEY AND OPEN THE DOOR = press "U" key
+TO SING, AND PUT THE EVIL QUEEN TO SLEEP = press and hold "S" key for 
+desired amount of time. 
+
+CHARACTERS
+
+MAIN CHARACTER = player;
+TUNNEL KEEPER - guards the tunnel entrances; will provide guidance, 
+beware, as hes a habitual liar.
+QUEENS GUARDS -
+BLACK GUARDS - guard the smaller coves of the queens tunnels; weak fighting abilities
+easy to defeat.
+RED GUARDS - will defend entrance to the queens chamber with their lives; only weakness is sweets.
+can be put into a sugar coma with small amount of sugar.
+THE EVIL QUEEN - is a mean bitch, hasnt gotten any since the king died 
+over 10 YEARS ago! Not easily persuaded, but does have one weakness, music. 
+Despite her love to sing and listen to music, after being caught
+cheating, the king before he passed, had every musical instrument gathered and
+destroyed, and if one was caught singing they would be put to death.
+The king was so ruthless and evil that despite his death noone in the kingdom
+dared to sing or make new instruments.
+
+THE ROOMS
+
+THE ENTRANCE TO THE TUNNELS - where the game begins
+nothing much in this room
+
+THE RIGHT TUNNEL
+
+THE LEFT TUNNEL
+
+THE STORAGE AREA 
+
+THE QUEENS CHAMBER 

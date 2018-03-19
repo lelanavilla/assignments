@@ -1,0 +1,270 @@
+                            html {
+                                overflow: hidden;
+                                display: block;
+                            }
+                            
+                            html,
+                            body {
+                                font-family: Verdana, sans-serif;
+                                font-size: 15px;
+                                line-height: 1.5;
+                                margin: 0;
+                            }
+                            
+                            *:before,
+                            *:after {
+                                box-sizing: inherit;
+                            }
+                            
+                            body,
+                            h1,
+                            h2,
+                            h3,
+                            h4,
+                            h5,
+                            h6 {
+                                font-family: "Raleway", Arial, Helvetica, sans-serif;
+                            }
+                            
+                            h1,
+                            h2,
+                            h3,
+                            h4,
+                            h5,
+                            h6 {
+                                font-weight: 400;
+                                margin: 10px 0;
+                            }
+                            
+                            h3 {
+                                font-size: 24px;
+                            }
+                            
+                            .myLink {
+                                display: none;
+                            }
+                            
+                            style {
+                                display: none;
+                            }
+                            
+                            link {
+                                display: none;
+                            }
+                            
+                            .light-grey,
+                            .hover-light-grey:hover,
+                            .light-gray,
+                            .hover-light-gray:hover {
+                                color: #000!important;
+                                background-color: #f1f1f1!important;
+                            }
+                            
+                            border-bottom {
+                                border-bottom: 1px solid #ccc!important;
+                            }
+                            
+                            .xlarge {
+                                font-size: 24px!important;
+                            }
+                            
+                            .bar {
+                                width: 100%;
+                                overflow: hidden;
+                            }
+                            
+                            div {
+                                display: block;
+                            }
+                            
+                            .container:after,
+                            .container:before,
+                            .panel:after,
+                            .panel:before,
+                            .row:after,
+                            .row:before,
+                            .row-padding:after,
+                            .row-padding:before,
+                            .cell-row:before,
+                            .cell-row:after,
+                            .clear:after,
+                            .clear:before,
+                            .bar:before,
+                            bar.after {
+                                content: "";
+                                display: table;
+                                clear: both;
+                            }
+                            
+                            .bar .button {
+                                white-space: normal;
+                            }
+                            
+                            .bar .bar-item {
+                                padding: 8px 16px;
+                                float: left;
+                                width: auto;
+                                border: none;
+                                display: block;
+                                outline: 0;
+                                width: 100%;
+                                overflow: hidden;
+                            }
+                            
+                            .text-red,
+                            .hover-text-red:hover {
+                                color: #f44336!important
+                            }
+                            
+                            .btn,
+                            .button {
+                                user-select: none;
+                                vertical-align: middle;
+                                overflow: hidden;
+                                text-decoration: none;
+                                background-color: inherit;
+                                text-align: center;
+                                cursor: pointer;
+                            }
+                            
+                            .image {
+                                max-width: 100%;
+                                height: auto;
+                            }
+                            
+                            img {
+                                vertical-align: middle;
+                                border-style: none;
+                            }
+                            
+                            input {
+                                -webkit-appearance: textfield;
+                                background-color: white;
+                                -webkit-rtl-ordering: logical;
+                                cursor: text;
+                            }
+                            
+                            element.style {
+                                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR…jMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=);
+                                background-repeat: no-repeat;
+                                background-attachment: scroll;
+                                background-size: 16px 18px;
+                                background-position: 98% 50%;
+                                width: 65%;
+                            }
+                            
+                            .display-middle {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                            
+                            .fa {
+                                display: inline-block;
+                                font: normal normal normal 14px/1 FontAwesome;
+                                font-size: inherit;
+                                text-rendering: auto;
+                                -webkit-font-smoothing: antialiased;
+                            }
+                            
+                            .margin-right {
+                                margin-right: 16px!important;
+                            }
+                            
+                            button,
+                            select {
+                                text-transform: none;
+                            }
+                            
+                            button,
+                            input,
+                            select,
+                            textarea {
+                                font: inherit;
+                                margin: 0;
+                                text-rendering: auto;
+                                color: initial;
+                                letter-spacing: normal;
+                                word-spacing: normal;
+                                text-transform: none;
+                                text-indent: 0px;
+                                text-shadow: none;
+                                display: inline-block;
+                                text-align: start;
+                            }
+                            
+                            .padding-16 {
+                                padding-top: 16px!important;
+                                padding-bottom: 16px!important;
+                            }
+                            
+                            .container,
+                            .panel {
+                                padding: 0.01em 16px;
+                            }
+                            
+                            input,
+                            textarea,
+                            select,
+                            button,
+                            meter,
+                            progress {
+                                -webkit-writing-mode: horizontal-tb;
+                            }
+                            
+                            p {
+                                display: block;
+                                -webkit-margin-before: 1em;
+                                -webkit-margin-after: 1em;
+                                -webkit-margin-start: 0px;
+                                -webkit-margin-end: 0px;
+                            }
+                            
+                            h3 {
+                                display: block;
+                                font-size: 1.17em;
+                                -webkit-margin-before: 1em;
+                                -webkit-margin-after: 1em;
+                                -webkit-margin-start: 0px;
+                                -webkit-margin-end: 0px;
+                                font-weight: bold;
+                            }
+                            
+                            .row-padding,
+                            .row-padding>.half,
+                            .row-padding>.third,
+                            .row-padding>twothird,
+                            .row-padding>.threequarter,
+                            .row-padding>.quarter,
+                            .row-padding>.col {
+                                padding: 0 8px;
+                            }
+                            
+                            .half,
+                            .third,
+                            .twothird,
+                            .threequarter,
+                            .quarter {
+                                float: left;
+                            }
+                            
+                            opacity,
+                            .hover-opacity:hover {
+                                opacity: 0.60;
+                            }
+                            
+                            .card,
+                            .card-2 {
+                                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+                            }
+                            
+                            .panel {
+                                margin-top: 16px;
+                                margin-bottom: 16px;
+                            }
+                            
+                            .container,
+                            .panel {
+                                padding: 0.01em 16px;
+                            }

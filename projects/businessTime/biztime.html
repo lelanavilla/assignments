@@ -1,147 +1,176 @@
 <!DOCTYPE html>
 <html>
-<title>Marios Vacations</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Raleway", Arial, Helvetica, sans-serif
-    }
-    
-    .myLink {
-        display: none
-    }
-</style>
 
-<body class="w3-light-blue">
-    <nav class="nav-bar" <!-- Header -->
-        <header class="main-display-container w3-content w3-hide-small" style="max-width:1500px">
-            <img class="w3-image" src="https://i.imgur.com/SnJk8SY.jpg" alt="Mario Vacations" width="1500" height="700">
+<head>
+    <title>Marios Vacations</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        </header>
+</head>
 
-        <!-- Page content -->
-        <div class="w3-content" style="max-width:1100px;">
+<body class="teal"></body>
+<nav class="nav-bar">
+    <h1>Mario's Vacations</h1>
+</nav>
 
-            <!-- Good offers -->
-            <div class="w3-container w3-margin-top">
-                <h3>Current Travel Specials</h3>
-                <h6>With up to <strong>50%</strong> discount.</h6>
+<!-- Header -->
+<header class="main-display-container w3-content w3-hide-small" style="max-width:1500px">
+    <img class="w3-image" src="https://i.imgur.com/SnJk8SY.jpg" alt="Mario Vacations" width="1500" height="700">
+
+    <div class="w3-display-middle" style="width:65%">
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');">Hotel</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Attractions');">Featured Attractions</button>
+
+        </div>
+    </div>
+    <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
+        <h3>Experience Super Mario World with Us</h3>
+        <div class="w3-row-padding" style="margin:0 -16px;">
+            <div class="w3-half">
+                <label>Name</label>
+                <input class="w3-input w3-border" type="text" placeholder="Name">
             </div>
-            <div class="w3-row-padding w3-text-white w3-large">
+            <div class="w3-half">
+                <label>Email:</label>
+                <input class="w3-input w3-border" type="text" placeholder="Email:">
+            </div>
+        </div>
+        <p><button class="w3-button w3-dark-grey">Subscribe</button></p>
+    </div>
+
+    <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink">
+        <h3>Sunshine Hotel</h3>
+        <p>Five Star Hotel</p>
+        <p>We know comfort.</p>
+        <p><button class="w3-button w3-dark-grey">Hotel</button></p>
+    </div>
+
+    <div id="Car" class="w3-container w3-white w3-padding-16 myLink">
+        <h3>Featured Attractions</h3>
+        <p><span class="w3-tag w3-deep-orange">Travel Club Members</span> Receive 30% off all Featued Attractions</p>
+
+        </p>
+    </div>
+    </div>
+</header>
+
+</header>
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px;">
+
+    <!-- Good offers -->
+    <div class="w3-container w3-margin-top">
+        <h3>Current Travel Specials</h3>
+        <h6>With up to <strong>50%</strong> discount.</h6>
+    </div>
+    <div class="w3-row-padding w3-text-white w3-large">
+        <div class="w3-half w3-margin-bottom">
+            <div class="w3-display-container">
+                <img src="https://i.imgur.com/0yp7fP8.jpg" alt="South Mario Island" style="width:100%">
+                <span class="w3-display-bottomleft w3-padding">South Mario Island</span>
+            </div>
+        </div>
+        <div class="w3-half">
+            <div class="w3-row-padding" style="margin:0 -16px">
                 <div class="w3-half w3-margin-bottom">
                     <div class="w3-display-container">
-                        <img src="https://i.imgur.com/0yp7fP8.jpg" alt="South Mario Island" style="width:100%">
-                        <span class="w3-display-bottomleft w3-padding">South Mario Island</span>
-                    </div>
-                </div>
-                <div class="w3-half">
-                    <div class="w3-row-padding" style="margin:0 -16px">
-                        <div class="w3-half w3-margin-bottom">
-                            <div class="w3-display-container">
-                                <img src="https://i.imgur.com/ZW7Xpwr.jpg" alt="Ancient City" style="width:100%">
-                                <span class="w3-display-bottomleft w3-padding">Ancient City</span>
-                            </div>
-                        </div>
-                        <div class="w3-half w3-margin-bottom">
-                            <div class="w3-display-container">
-                                <img src="https://i.imgur.com/tZTThEr.jpg" alt="Chinese Gardens" style="width:100%">
-                                <span class="w3-display-bottomleft w3-padding">Chinese Gardens</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w3-row-padding" style="margin:0 -16px">
-                        <div class="w3-half w3-margin-bottom">
-                            <div class="w3-display-container">
-                                <img src="https://i.imgur.com/VRjqdrU.jpg" alt="Time Space" style="width:100%">
-                                <span class="w3-display-bottomleft w3-padding">Time Space</span>
-                            </div>
-                        </div>
-                        <div class="w3-half w3-margin-bottom">
-                            <div class="w3-display-container">
-                                <img src="https://i.imgur.com/hhT20Y5.jpg" alt="Lost Land" style="width:100%">
-                                <span class="w3-display-bottomleft w3-padding">Lost Land</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Explore Nature -->
-            <div class="w3-container">
-                <h3>Explore Nature</h3>
-                <p>Travel with us and see nature at its finest.</p>
-            </div>
-            <div class="w3-row-padding">
-                <div class="w3-half w3-margin-bottom">
-                    <img src="https://i.imgur.com/FEPyjZM.jpg" alt="Raindow Waterfalls" style="width:100%">
-                    <div class="w3-container w3-white">
-                        <h3>Rainbow Waterfalls, Nintendo</h3>
-                        <p class="w3-opacity">Roundtrip from 180 Coins</p>
-                        <p>Explore this Breathtaking Destination</p>
-
+                        <img src="https://i.imgur.com/ZW7Xpwr.jpg" alt="Ancient City" style="width:100%">
+                        <span class="w3-display-bottomleft w3-padding">Ancient City</span>
                     </div>
                 </div>
                 <div class="w3-half w3-margin-bottom">
-                    <img src="https://i.imgur.com/JPxT7PU.jpg" alt="Alien Sunset" style="width:100%">
-                    <div class="w3-container w3-white">
-                        <h3>Alien, Nintendo</h3>
-                        <p class="w3-opacity">One-way from 50 Coins</p>
-                        <p>Take a Short Trip to view the Beautiful Alien Sunset</p>
+                    <div class="w3-display-container">
+                        <img src="https://i.imgur.com/tZTThEr.jpg" alt="Chinese Gardens" style="width:100%">
+                        <span class="w3-display-bottomleft w3-padding">Chinese Gardens</span>
                     </div>
                 </div>
             </div>
-
-            <!-- Newsletter -->
-            <div class="w3-container">
-                <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
-                    <h2>Join Our Travel Club</h2>
-                    <p>Subscribe to our monthly newsletter.</p>
-                    <label>E-mail</label>
-                    <input class="w3-input w3-border" type="text" placeholder="Your Email address">
-                    <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <img src="https://i.imgur.com/VRjqdrU.jpg" alt="Time Space" style="width:100%">
+                        <span class="w3-display-bottomleft w3-padding">Time Space</span>
+                    </div>
+                </div>
+                <div class="w3-half w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <img src="https://i.imgur.com/hhT20Y5.jpg" alt="Lost Land" style="width:100%">
+                        <span class="w3-display-bottomleft w3-padding">Lost Land</span>
+                    </div>
                 </div>
             </div>
-
-            <!-- Contact -->
-            <div class="w3-container">
-                <h2>Contact Us</h2>
-                <p>Book your next trip with us!</p>
-                <i class="fa fa-map-marker" style="width:30px"></i> Nintendo, US<br>
-                <i class="fa fa-phone" style="width:30px"></i> Phone: 555.555.1234<br>
-                <i class="fa fa-envelope" style="width:30px"> </i> Email: mario@mariosvacations.com<br>
-            </div>
-
-            <!-- End page content -->
         </div>
+    </div>
 
-        <!-- Footer -->
-        <footer class="w3-container w3-center w3-opacity w3-margin-bottom">
-            <h5>Find Us On</h5>
-            <div class="w3-xlarge w3-padding-16">
-                <i class="fa fa-facebook-official w3-hover-opacity"></i>
-                <i class="fa fa-instagram w3-hover-opacity"></i>
-                <i class="fa fa-snapchat w3-hover-opacity"></i>
-                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-                <i class="fa fa-twitter w3-hover-opacity"></i>
-                <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <!-- Explore Nature -->
+    <div class="w3-container">
+        <h3>Explore Nature</h3>
+        <p>Travel with us and see nature at its finest.</p>
+    </div>
+    <div class="w3-row-padding">
+        <div class="w3-half w3-margin-bottom">
+            <img src="https://i.imgur.com/FEPyjZM.jpg" alt="Raindow Waterfalls" style="width:100%">
+            <div class="w3-container w3-white">
+                <h3>Rainbow Waterfalls, Nintendo</h3>
+                <p class="w3-opacity">Roundtrip from 180 Coins</p>
+                <p>Explore this Breathtaking Destination</p>
+
             </div>
-            <p>Powered by A V-School Student</a>
-            </p>
-        </footer>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+            <img src="https://i.imgur.com/JPxT7PU.jpg" alt="Alien Sunset" style="width:100%">
+            <div class="w3-container w3-white">
+                <h3>Alien, Nintendo</h3>
+                <p class="w3-opacity">One-way from 50 Coins</p>
+                <p>Take a Short Trip to view the Beautiful Alien Sunset</p>
+            </div>
+        </div>
+    </div>
 
-        <script src="bizTime.js" </script>
-            < /body>
+    <!-- Newsletter -->
+    <div class="w3-container">
+        <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
+            <h2>Join Our Travel Club</h2>
+            <p>Subscribe to our monthly newsletter.</p>
+            <label>E-mail</label>
+            <input class="w3-input w3-border" type="text" placeholder="Your Email address">
+            <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="w3-container">
+        <h2>Contact Us</h2>
+        <p>Book your next trip with us!</p>
+        <i class="fa fa-map-marker" style="width:30px"></i> Nintendo, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: 555.555.1234<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mario@mariosvacations.com<br>
+    </div>
+
+    <!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+    <h5>Find Us On</h5>
+    <div class="w3-xlarge w3-padding-16">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Powered by A V-School Student</a>
+    </p>
+</footer>
+
+<script src="bizTime.js"></script>
+</body>
 
 
-            <
-            /html>
+</html>

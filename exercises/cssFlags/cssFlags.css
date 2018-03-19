@@ -1,207 +1,327 @@
-*{
-    box-sizing: border-box;
-    margin:0;
-    font-style:0;
-}
-body{
-
-}
-
-div .france .france-child-one .france-child-two{ 
-    display: inline-block;
-    border: 2px solid black;
-position:relative;
-}
-.france {
-width: 290px;
-height:174px;
-position:absolute;
-border-top:2px solid gray;
-border-left:2px solid gray;
-border-bottom: 2px solid gray;
-background-color: white;
-display: inline-block;
-
-}
-.france-child-two{
-    width: 90px;
-    height:174px;
-    background-color: blue;
-    position:absolute;
-    right:0px;
-    
-    display: inline-block;
-}
-.france-child-one{
-    width: 120px;
-    height: 174px;
-    background-color:red;
-    position:absolute;
-    right: 80px;
-    
-    displaY: inline-block;
-}
-
-.germany {
-    width: 290px;
-    height: 174px;
-    background-color:black;
-position:absolute;
-top: 195px;
-}
-.germany-child-one{
-    position:absolute;
-    width: 290px;
-    height:58px;
-    top: 235px;
-    background-color: red;
-}
-.germany-child-two{
-    width: 290px;
-    height: 58px;
-    position:absolute;
-    top: 194px;
-    background-color: yellow;
-}
-.madagascar {
-    width: 290px;
-    height: 183px;
-    position:absolute;
-    top:374px;
-    background-color: white;
-    border: 2px solid gray;
-}
-.madagascar-child-one{
-    position:absolute;
-    width:290px;
-    top:375px;
-    background-color: red;
-    height:84px;
-    left: 0px;
-
-}
-.madagascar-child-two{
-position:absolute;
-top:458px;
-left:0px;
-width:290px;
-height:97px;
-background-color: green;
-}
-.switzerland {
-    width: 290px;
-    height: 190px;
-    position: absolute;
-    background-color: red;
-    top: 620px;
-}
-
-.switz-child-one {
-    position: absolute;
-    width: 45px;
-    height: 150px;
-    background-color: white;
-    top: 650px;
-    left: 105px;
-}
-
-.switz-child-two {
-    width: 125px;
-    height: 45px;
-    background-color: white;
-    top: 700px;
-    left: 65px;
-    position: absolute;
-}
-
-.sweden {
-    width: 290px;
-    height: 181px;
-    position: absolute;
-    background: #0f6b94;
-    top: 845px;
-}
-
-.sweden-child-one {
-        background-color: #ffe107;
-        width: 290px;
-        height: 40px;
-        position: absolute;
-        top: 920px;
-        
-    }
-    .sweden-child-two {
-        position: absolute;
-        background-color: #ffe107;
-        width: 40px;
-        height: 181px;
-        left: 30px;
-        top: 845px;
-    }
-    .gambia {
-        width: 290px;
-        height: 75px;
-        background-color:red;
-        position:absolute;
-        top:1040px;
-
-    }
-    .gambia-child-one {
-        width: 290px;
-        height:55px;
-        position:absolute;
-        background-color: darkblue;
-        top:1125px;
-    }
-    .gambia-child-two {
-        width: 290px;
-        height:75px;
-        position:absolute;
-        top:1190px;
-        background-color: green;
-    }
-    .tonga {
-        width: 290px;
-        height: 191px;
-        position:absolute;
-        background-color:red;
-        top:1300px;
-    }
-    .tonga-child-one{
-        width: 154px;
-        height:104px;
-        background-color:white;
-        position: absolute;
-        top:1350px;
-
-    }
-    .tonga-child-two{
-        width: 34px;
-        height:54px;
-        background-color:red;
-        position: absolute;
-        top:1355px;
-    }
-    .tonga-child-three{
-        width: 134px;
-        height:104px;
-        background-color: white;
-        position: absolute;
-        top:1300px;
-    }
-    .japan {
-        width: 580px;
-        height: 387px;
-    }
-    .greece {
-        width: 580px;
-        height: 387px;
-    }
-    .niger {
-        width: 580px;
-        height: 497px;
-    }
-    .maldives {
-        width: 580px;
-        height: 387px;
-    }
+                            * {
+                                box-sizing: border-box;
+                                margin: 0;
+                                font-style: 0;
+                            }
+                            
+                            .grid {
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                            }
+                            
+                            div .france .france-child-one .france-child-two {
+                                display: inline-block;
+                                border: 2px solid black;
+                                position: relative;
+                            }
+                            
+                            .france {
+                                width: 290px;
+                                height: 174px;
+                                position: absolute;
+                                border-top: 2px solid gray;
+                                border-left: 2px solid gray;
+                                border-bottom: 2px solid gray;
+                                background-color: white;
+                                display: inline-block;
+                            }
+                            
+                            .france-child-two {
+                                width: 90px;
+                                height: 174px;
+                                background-color: blue;
+                                position: absolute;
+                                right: 0px;
+                                display: inline-block;
+                            }
+                            
+                            .france-child-one {
+                                width: 120px;
+                                height: 174px;
+                                background-color: red;
+                                position: absolute;
+                                right: 80px;
+                                displaY: inline-block;
+                            }
+                            
+                            .germany {
+                                width: 290px;
+                                height: 174px;
+                                background-color: black;
+                                position: absolute;
+                                top: 195px;
+                            }
+                            
+                            .germany-child-one {
+                                position: absolute;
+                                width: 290px;
+                                height: 58px;
+                                top: 235px;
+                                background-color: red;
+                            }
+                            
+                            .germany-child-two {
+                                width: 290px;
+                                height: 58px;
+                                position: absolute;
+                                top: 194px;
+                                background-color: yellow;
+                            }
+                            
+                            .madagascar {
+                                width: 290px;
+                                height: 183px;
+                                position: absolute;
+                                top: 374px;
+                                background-color: white;
+                                border: 2px solid gray;
+                            }
+                            
+                            .madagascar-child-one {
+                                position: absolute;
+                                width: 290px;
+                                top: 375px;
+                                background-color: red;
+                                height: 84px;
+                                left: 0px;
+                            }
+                            
+                            .madagascar-child-two {
+                                position: absolute;
+                                top: 458px;
+                                left: 0px;
+                                width: 290px;
+                                height: 97px;
+                                background-color: green;
+                            }
+                            
+                            .switzerland {
+                                width: 290px;
+                                height: 190px;
+                                position: absolute;
+                                background-color: red;
+                                top: 620px;
+                            }
+                            
+                            .switz-child-one {
+                                position: absolute;
+                                width: 45px;
+                                height: 150px;
+                                background-color: white;
+                                top: 650px;
+                                left: 105px;
+                            }
+                            
+                            .switz-child-two {
+                                width: 125px;
+                                height: 45px;
+                                background-color: white;
+                                top: 700px;
+                                left: 65px;
+                                position: absolute;
+                            }
+                            
+                            .sweden {
+                                width: 290px;
+                                height: 181px;
+                                position: absolute;
+                                background: #0f6b94;
+                                top: 845px;
+                            }
+                            
+                            .sweden-child-one {
+                                background-color: #ffe107;
+                                width: 290px;
+                                height: 40px;
+                                position: absolute;
+                                top: 920px;
+                            }
+                            
+                            .sweden-child-two {
+                                position: absolute;
+                                background-color: #ffe107;
+                                width: 40px;
+                                height: 181px;
+                                left: 30px;
+                                top: 845px;
+                            }
+                            
+                            .gambia {
+                                width: 290px;
+                                height: 75px;
+                                background-color: red;
+                                position: absolute;
+                                top: 1040px;
+                            }
+                            
+                            .gambia-child-one {
+                                width: 290px;
+                                height: 55px;
+                                position: absolute;
+                                background-color: darkblue;
+                                top: 1125px;
+                            }
+                            
+                            .gambia-child-two {
+                                width: 290px;
+                                height: 75px;
+                                position: absolute;
+                                top: 1190px;
+                                background-color: green;
+                            }
+                            
+                            .tonga {
+                                width: 290px;
+                                height: 191px;
+                                position: absolute;
+                                background-color: red;
+                                top: 1300px;
+                            }
+                            
+                            .tonga-child-one {
+                                width: 154px;
+                                height: 104px;
+                                background-color: white;
+                                position: absolute;
+                                top: 1300px;
+                            }
+                            
+                            .tonga-child-two {
+                                width: 24px;
+                                height: 54px;
+                                background-color: red;
+                                position: absolute;
+                                left: 45px;
+                                top: 1315px;
+                            }
+                            
+                            .tonga-child-three {
+                                width: 64px;
+                                height: 24px;
+                                background-color: #f10303;
+                                position: absolute;
+                                top: 1329px;
+                                left: 25px
+                            }
+                            
+                            .japan {
+                                width: 290px;
+                                height: 196px;
+                                position: absolute;
+                                top: 0;
+                                left: 410px;
+                                border: 1px solid black;
+                            }
+                            
+                            .japan-circle {
+                                border-radius: 50%;
+                                width: 100px;
+                                height: 100px;
+                                position: absolute;
+                                top: 3950;
+                                left: 500px;
+                                background-color: red;
+                            }
+                            
+                            .greece {
+                                width: 290px;
+                                height: 193px;
+                                position: absolute;
+                                left: 410px;
+                                top: 200px;
+                            }
+                            
+                            .greece-child-one {
+                                width: 96px;
+                                height: 96px;
+                                position: absolute;
+                                left: 410px;
+                                top: 200px;
+                                background-color: blue;
+                            }
+                            
+                            .greece-child-two {
+                                width: 24px;
+                                height: 96px;
+                                position: absolute;
+                                left: 444px;
+                                top: 200px;
+                                background-color: white;
+                            }
+                            
+                            .greece-child-three {
+                                width: 96px;
+                                height: 24px;
+                                position: absolute;
+                                left: 410px;
+                                top: 240px;
+                                background-color: white;
+                            }
+                            
+                            .greece-child-four {
+                                width: 194px;
+                                height: 24px;
+                                position: absolute;
+                                left: 506px;
+                                top: 200px;
+                                background-color: blue;
+                            }
+                            
+                            .greece-child-five {
+                                width: 194px;
+                                height: 24px;
+                                position: absolute;
+                                left: 506px;
+                                top: 237px;
+                                background-color: blue;
+                            }
+                            
+                            .greece-child-six {
+                                width: 194px;
+                                height: 24px;
+                                position: absolute;
+                                left: 506px;
+                                top: 272px;
+                                background-color: blue;
+                            }
+                            
+                            .greece-child-seven {
+                                width: 290px;
+                                height: 26px;
+                                position: absolute;
+                                left: 410px;
+                                top: 304px;
+                                background-color: blue;
+                            }
+                            
+                            .greece-child-eight {
+                                width: 290px;
+                                height: 24px;
+                                position: absolute;
+                                left: 410px;
+                                top: 340px;
+                                background-color: blue;
+                            }
+                            
+                            .niger {
+                                width: 290px;
+                                height: 96px;
+                                position: absolute;
+                                top: 400px;
+                                left: 410px;
+                                background-color: orangered
+                            }
+                            
+                            .niger-child-one {
+                                width: 290px;
+                                height: 96px;
+                                background-color: green;
+                                position: absolute;
+                                top: 592px;
+                                left: 410px;
+                            }
+                            
+                            .maldives {
+                                width: 580px;
+                                height: 387px;
+                            }

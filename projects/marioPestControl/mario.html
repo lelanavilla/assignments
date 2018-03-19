@@ -12,72 +12,58 @@
 
 <body>
 
-    <header id="header-name">Marios Pest Control
+    <header id="header-name">Marios Pest Control<br> Price List
     </header>
-    <section id="showcase" class="showcase-section">
-        <div class="container">
-            <h1>Goomba's, Bob-omb's, and Cheep-Cheep's</h1>
-            <h2>Price List</h2>
-
-
-            <sidebar class="mario"><img class="mario">
-                <a href="https://imgur.com/nXaUA3Y"><img src="https://i.imgur.com/nXaUA3Y.png" title="source: imgur.com" /></a>
-                </img>
-            </sidebar>
+    <sidebar class="mario"><img class="mario">
+        <a href="https://imgur.com/nXaUA3Y"><img src="https://i.imgur.com/nXaUA3Y.png" title="source: imgur.com" /></a>
+        </img>
+    </sidebar>
+    <div id="baddies-container" class="baddies-container">
+        <div id="section1" class="baddies">
+            <h3>Goomba Price = 5 Coins</h3>
+            <div class="pic" name="goomba" id="goomba-pic">
+                <a href="https://imgur.com/o1rCrFC"><img src="https://i.imgur.com/o1rCrFCs.png" title="source: imgur.com" /></a>
+            </div>
+            <input class="inputBox" type="text" id="gInput" name="gInput" placeholder="Enter # of Goombas">
+            <input class="inputBox" disabled value="0" type="text" id="gInputSub" name="bInput">
         </div>
-
-
-    </section>
-    <form name="price-list" id="priceList" columns="3" rows="4">
-        <div id="baddies-container" class="baddies-container">
-            <section id="section1" class="goomba-section">
-                <h2>Goomba Price = 5 Coins</h2>
-                <div class="pic" name="goomba" id="goomba-pic">
-                    <a href="https://imgur.com/o1rCrFC"><img src="https://i.imgur.com/o1rCrFCs.png" title="source: imgur.com" /></a>
-                </div>
-                <input class="inputBox" type="text" id="gInput" name="gInput" placeholder="Enter # of Goombas">
-                <input class="inputBox" disabled value="0" type="text" id="gInputSub" name="bInput">
-
-            </section>
-            <section id="section2" class="bobomb-section">
-                <h2>Bob-omb Price = 7 Coins</h2>
-                <div class="pic" name="bob" id="bob-pic">
-                    <a href="https://imgur.com/qjFg0g7"><img src="https://i.imgur.com/qjFg0g7s.png" title="source: imgur.com" /></a>
-                </div>
-                <input class="inputBox" type="text" id="bInput" name="bInput" placeholder="Enter # of Bob-ombs">
-                <input class="inputBox" disabled value="0" type="text" id="bInputSub" name="bInput">
-
-            </section>
-            <section id="section3" class="cheep-section">
-                <h2>Cheep-Cheep Price = 11 Coins</h2>
-                <div class="pic" name="cheep" id="cheep-pic">
-                    <a href="https://imgur.com/Jugvh7J"><img src="https://i.imgur.com/Jugvh7Js.jpg" title="source: imgur.com" /></a>
-                </div>
-                <input class="inputBox" type="text" id="cInput" name="cInput" placeholder="Enter # of Cheep-Cheeps">
-
-                <input class="inputBox" disabled value="0" type="text" id="cInputSub" name="cInputSub"> </div>
+        <div id="section2" class="baddies">
+            <h3>Bob-omb Price = 7 Coins</h3>
+            <div class="pic" name="bob" id="bob-pic">
+                <a href="https://imgur.com/qjFg0g7"><img src="https://i.imgur.com/qjFg0g7s.png" title="source: imgur.com" /></a>
+            </div>
+            <input class="inputBox" type="text" id="bInput" name="bInput" placeholder="Enter # of Bob-ombs">
+            <input class="inputBox" disabled value="0" type="text" id="bInputSub" name="bInput">
+        </div>
+        <div id="section3" class="baddies">
+            <h3>Cheep-Cheep Price = 11 Coins</h3>
+            <div class="pic" name="cheep" id="cheep-pic">
+                <a href="https://imgur.com/Jugvh7J"><img src="https://i.imgur.com/Jugvh7Js.jpg" title="source: imgur.com" /></a>
+            </div>
+            <input class="inputBox" type="text" id="cInput" name="cInput" placeholder="Enter # of Cheep-Cheeps">
+            <input class="inputBox" disabled value="0" type="text" id="cInputSub" name="cInputSub"> </div>
         <!-- <section id="sTotal" class="total-area"><h2>Subtotal:$</h2>
 <input type="text" disable id="subtotal" class="subtotal">
 <br>
 </section> -->
+    </div>
+    </div>
 
-        <section class="total-area">
-            <h2 class="grand-total"></h2>Your Grand Total : $</h2>
-            <input class="inputBox" type="text" disabled id="total" class="total">
-        </section>
-        </div>
-    </form>
-
-
-    <footer><strong>Mario's Pest Control
-    <br> 123 Bro Drive
-    <br> Nintendo, USA 12345
-    <br>Phone:555.555.1000
-    <br>Email:mariospestcontrol@nintendo.com
-    </strong>
-
-    </footer>
+    <section class="total-area">
+        <h2 class="grand-total">Your Grand Total :</h2>
+        <input class="inputBox" type="text" disabled id="total" class="total" placeholder="$"></section>
+    <div class="footer">
+        <p>
+            <strong>Mario's Pest Control
+        <br> 123 Bro Drive
+        <br> Nintendo, USA 12345
+        <br>Phone:555.555.1000
+        <br>Email:mariospestcontrol@nintendo.com
+        </strong>
+        </p>
+    </div>
     <script src="./mario.js"></script>
 </body>
+
 
 </html>

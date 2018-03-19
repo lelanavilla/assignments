@@ -31,7 +31,7 @@ function myStr(str) {
 
 myStr("hi,good day");
 
-var fibonacci_series = function (n) {
+var fibonacci_series = function(n) {
     if (n === 1) {
         return [0, 1];
     } else {
@@ -48,3 +48,19 @@ function getSum(total, num) {
     total + num;
     mySeq.reduce(mySum);
 }
+
+function quad(a, b, c) {
+    var xValues = [];
+    a = eval(a.value);
+    b = eval(b.value);
+    c = eval(c.value);
+    x1 = -b / 2 / a + Math.pow(Math.pow(b, 2) - 4 * a * c, 0.5) / 2 / a;
+    x2 = -b / 2 / a - Math.pow(Math.pow(b, 2) - 4 * a * c, 0.5) / 2 / a;
+    x1.value = x1;
+    x2.value = x2;
+    xValues.push(x1, x2);
+    if (x1.value == "NaN") x1.value = "Imag.!";
+    if (x2.value == "NaN") x2.value = "Imag.!";
+    console.log(xValues);
+}
+quad(2, 4, 5);
