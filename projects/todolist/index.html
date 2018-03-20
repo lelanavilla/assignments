@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+</head>
+
+<body>
+
+    <div class="todo" id="todos">
+        <ul>
+
+        </ul>
+
+    </div>
+    <br>
+    <br>
+    <div id="specificToDo">
+        <h3>Data from Specific To-Do:</h3>
+        <br>
+    </div>
+    <form id="form">
+        <h4>Add New To-Do:
+        </h4>
+        <div>
+            <h3>Title:</h3>
+            <input type="text" id="title">
+            <h3>Price:</h3>
+            <input type="text" id="price">
+        </div>
+
+        <div>
+            <h3>Description:</h3>
+            <input type="text" id="description">
+            <HR>
+            <h3>Add ImageURL:</h3>
+            <input type="text" id="imgUrl" placeholder="Enter URL of image to UpLoad">
+            <hr>
+            <button type="submit" id="submit">Submit</button>
+            <br>
+
+            <input type="text" id="refId" placeholder="Enter ID # to Update">
+            <button type="submit" id="update">Update</button>
+            <br>
+            <button type="submit" id="delete">Delete</button>
+            <br>
+            <h3> Task Complete</h3>
+            <hr>
+            <section id="checkbox-section">
+                <h5>Yes</h5> <input type="checkbox" id="completed-yes">
+                <h5>No</h5> <input type="checkbox" id="completed-no">
+            </section>
+
+        </div>
+    </form>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js">
+    </script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
