@@ -1,0 +1,44 @@
+body {
+    object-fit: cover;
+    opacity: 60%;
+    color: white;
+}
+
+.header {
+    background-color: red;
+    border: red 5px double;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+
+form {
+    position: absolute;
+    display: border-box;
+    flex-direction: row;
+    top: 250px;
+}
+
+input {
+    border: solid black 2px;
+    font-size: 20px;
+    color: black;
+}
+
+label {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    background-color: red;
+    color: black;
+    width: 100px;
+    height: 30px;
+}

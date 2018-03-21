@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel:900');
+* {
+    margin: 20px;
+    padding: 10px;
+}
+
+body {
+    background-color: teal;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.wrapper {
+    width: 90%;
+    height: 100vh;
+}
+
+header {
+    background-color: white;
+    border: rgb(1, 43, 43) 3px double;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Cinzel;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+span {
+    background-color: black;
+    color: white;
+    height: 20px;
+    font-size: 14px;
+}
+
+input {
+    background-color: white;
+    width: 50%;
+    height: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+}
+
+form {
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+}
+
+li {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}

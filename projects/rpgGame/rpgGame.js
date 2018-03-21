@@ -55,7 +55,7 @@ function getItems() {
 }
 
 console.log("Currently you have" + playInfo.hp + "and" + playerInfo.wonItems + " that you've acquired during your battles");
-}
+
 
 function walk() {
     var enemyHere = Math.floor(Math.random() * 10)
