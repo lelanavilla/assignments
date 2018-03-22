@@ -10,7 +10,14 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: #b1e4e2;
+    background-color: black;
+}
+
+h1 {
+    color: rgb(102, 241, 241);
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 3px white;
 }
 
 #slideshow {
@@ -18,7 +25,7 @@ body {
     padding-top: 50px;
     height: 600px;
     width: 100%;
-    background-color: #6adecd;
+    background-color: black;
     box-sizing: border-box;
 }
 

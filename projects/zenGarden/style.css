@@ -1,6 +1,4 @@
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -19,8 +17,6 @@ body {
 
 a {
     color: #0d8ba1;
-    -webkit-transition: all 0.25s ease-out;
-    -moz-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
     text-decoration: none;
 }
@@ -118,8 +114,12 @@ p {
     position: relative;
 }
 
-.summary,
-.preamble {
+.wrapper {
+    display: block;
+}
+
+.demo,
+.first-sec {
     width: 80%;
     margin: 0 auto;
 }
@@ -131,7 +131,7 @@ p {
     margin-right: auto;
 }
 
-.summary {
+.demo {
     padding-top: 2em;
 }
 
@@ -141,8 +141,6 @@ p {
     display: inline-block;
     padding: 1px 10px 1px 32px;
     margin: -1px -10px -1px -6px;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
     border-radius: 1px;
     color: #809b7e;
     font-family: 'Julius Sans One', sans-serif;
@@ -188,7 +186,7 @@ p {
     background: #357d93;
 }
 
-div.participation,
+div.sec-two-green,
 div.benefits {
     background-attachment: scroll, scroll, fixed;
     background-color: rgba(138, 188, 159, 0.5);
@@ -197,7 +195,7 @@ div.benefits {
     background-size: auto, auto, cover;
 }
 
-div.participation {
+div.sec-two-green {
     padding: 3em 0;
     margin-top: 3em;
 }
@@ -207,12 +205,12 @@ div.benefits {
     margin-bottom: 3em;
 }
 
-div.participation h3,
+div.sec-two-green h3,
 div.benefits h3 {
     margin-top: 0;
 }
 
-div.participation p,
+div.sec-two-green p,
 div.benefits p {
     margin-bottom: 0;
 }
@@ -242,12 +240,12 @@ div.benefits p {
     overflow: hidden;
 }
 
-.design-selection ul,
+.design-pick ul,
 .zen-resources ul {
     margin: 0;
 }
 
-.design-selection li,
+.design-pick li,
 .zen-resources li {
     float: left;
     width: 50%;
@@ -257,22 +255,17 @@ div.benefits p {
     font-style: italic;
 }
 
-.design-selection li:hover,
-.design-selection li:focus {
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0)));
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
-    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+.design-pick li:hover,
+.design-pick li:focus {
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
 }
 
-.design-selection li:nth-child(2n+1),
+.design-pick li:nth-child(2n+1),
 .zen-resources li:nth-child(2n+1) {
     clear: left;
 }
 
-.design-selection .design-name,
+.design-pick .design-name,
 .zen-resources a,
 li.viewall a {
     display: block;
@@ -283,17 +276,17 @@ li.viewall a {
     text-transform: uppercase;
 }
 
-.design-selection h3 {
+.design-pick h3 {
     display: none;
 }
 
-.design-selection .designer-name {
+.design-pick .designer {
     color: #616857;
     font-size: 0.9em;
     font-style: normal;
 }
 
-.design-archives {
+.designs {
     position: absolute;
     top: 160px;
     right: 0;
@@ -302,15 +295,15 @@ li.viewall a {
     background: rgba(255, 255, 255, 0.2);
 }
 
-.design-archives h3 {
+.designs h3 {
     display: none;
 }
 
-.design-archives ul {
+.designs ul {
     margin: 0;
 }
 
-.design-archives li {
+.designs li {
     position: absolute;
     top: 0;
     padding: 0;
@@ -319,7 +312,7 @@ li.viewall a {
     list-style: none;
 }
 
-.design-archives li.viewall {
+.designs li.viewall {
     top: 0;
     left: 0;
     width: 100%;
@@ -337,17 +330,17 @@ li.viewall a {
     right: 0;
 }
 
-.design-archives a,
-.design-archives a:visited {
+.designs a,
+.designs a:visited {
     color: rgba(255, 255, 255, 0.65);
 }
 
-.design-archives a:hover,
-.design-archives a:focus {
+.designs a:hover,
+.designs a:focus {
     color: #fff;
 }
 
-.design-archives .next a {
+.designs .next a {
     display: block;
     overflow: hidden;
     width: 70px;
@@ -357,7 +350,7 @@ li.viewall a {
     white-space: nowrap;
 }
 
-.design-archives .viewall a {
+.designs .viewall a {
     z-index: 2;
     width: 100%;
     min-height: 70px;
@@ -365,7 +358,7 @@ li.viewall a {
     text-align: center;
 }
 
-.design-archives a::before {
+.designs a::before {
     position: absolute;
     left: 0;
     width: 70px;
@@ -382,17 +375,17 @@ li.viewall a {
     -webkit-font-smoothing: antialiased;
 }
 
-.design-archives .viewall a:hover,
-.design-archives .viewall a:focus,
-.design-archives .viewall a:active,
-.design-archives a:hover::before,
-.design-archives a:focus::before,
-.design-archives a:active::before {
+.designs .viewall a:hover,
+.designs .viewall a:focus,
+.designs .viewall a:active,
+.designs a:hover::before,
+.designs a:focus::before,
+.designs a:active::before {
     background-color: rgba(255, 255, 255, 0.25);
     box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-.design-archives .next a::before {
+.designs .next a::before {
     content: ">";
 }
 
@@ -505,7 +498,6 @@ footer a::before {
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    -webkit-font-smoothing: antialiased;
 }
 
 footer a.zen-validate-html::before {
@@ -554,7 +546,7 @@ footer a.zen-github:focus::before {
 }
 
 @media only screen and (max-width: 600px) {
-    .summary p:last-child {
+    .demo p:last-child {
         display: none;
     }
     h1 {
@@ -732,8 +724,9 @@ footer a.zen-github:focus::before {
     .supporting {
         display: inline;
     }
-    .summary,
-    .preamble,
+    .demo,
+    .first-sec,
+    .first-sec2,
     .supporting div,
     .requirements h3,
     .requirements p {
@@ -742,15 +735,15 @@ footer a.zen-github:focus::before {
         width: 66%;
         padding: 1em 5% 1em 10%;
     }
-    .explanation h3,
-    .explanation p,
-    .participation h3,
-    .participation p,
+    .first-sec-details h3,
+    .first-sec-details p,
+    .sec-two-green h3,
+    .sec-two-green p,
     .benefits h3,
     .benefits p {
         width: 100%;
     }
-    .summary {
+    .demo {
         padding-top: 3.25em;
     }
     .requirements h3,
@@ -758,18 +751,18 @@ footer a.zen-github:focus::before {
         margin: 0;
         padding-bottom: 0;
     }
-    div.participation,
+    div.sec-two-green,
     div.benefits {
         width: 100%;
         padding-left: 10%;
         padding-right: 38%;
         margin: 0;
     }
-    div.participation,
+    div.sec-two-green,
     div.requirements {
         padding-top: 4em;
     }
-    div.explanation,
+    div.first-sec-details,
     div.benefits {
         padding-bottom: 4em;
     }
@@ -789,84 +782,94 @@ footer a.zen-github:focus::before {
         padding-top: 3em;
         box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.3);
     }
-    .design-selection,
-    .zen-resources {
-        position: absolute;
-        top: 360px;
-        right: 0;
-        width: 33.3%;
-        padding: 0 0 20px 0;
-        margin: 0;
-        overflow: visible;
-        background: transparent;
-    }
-    .sidebar li {
-        float: none;
-        width: auto;
-        padding-left: 0;
-        padding-right: 0;
-        margin: 0 29.4% 0 14.7%;
-    }
-    .design-selection li:first-child {
-        border-top: 0;
-    }
-    .design-selection li:hover,
-    .design-selection li:focus {
-        background: none;
-    }
-    .design-archives {
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 310px;
-        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 66%, rgba(0, 0, 0, 0.2) 66%, rgba(33, 84, 95, 0.3) 100%);
-        background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(66%, rgba(255, 255, 255, 0)), color-stop(66%, rgba(33, 84, 95, 0.3)), color-stop(100%, rgba(33, 84, 95, 0)));
-        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 66%, rgba(33, 84, 95, 0.3) 66%, rgba(33, 84, 95, 0) 100%);
-        background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 66%, rgba(33, 84, 95, 0.3) 66%, rgba(33, 84, 95, 0) 100%);
-        background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 66%, rgba(33, 84, 95, 0.3) 66%, rgba(33, 84, 95, 0) 100%);
-        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 66%, rgba(33, 84, 95, 0.3) 66%, rgba(33, 84, 95, 0) 100%);
-    }
-    .design-archives nav {
-        display: block;
-        position: absolute;
-        right: 1%;
-        top: 120px;
-        width: 32%;
-    }
-    .design-archives li {
-        margin: 0;
-    }
-    .design-archives .viewall a,
-    .design-archives a::before {
-        background: rgba(255, 255, 255, 0.1);
-        text-decoration: none;
-    }
-    .design-archives .viewall a:hover,
-    .design-archives a:hover::before {
-        background-color: rgba(255, 255, 255, 0.2);
-    }
-    .zen-resources {
-        position: absolute;
-        top: 1310px;
-        right: 0;
-        width: 34%;
-        background: transparent;
-    }
-    .zen-resources h3 {
-        display: none;
-    }
-    .zen-resources ul {
-        width: 55.9%;
-        margin: 0 29.4% 0 14.7%;
-    }
-    .zen-resources li {
-        padding: 1.5em 0 1.25em 0;
-        margin: 0;
-    }
 }
 
+.design-pick,
+{
+    position: absolute;
+    top: 360px;
+    right: 0;
+    width: 33.3%;
+    padding: 0 0 20px 0;
+    margin: 0;
+    overflow: visible;
+    background: transparent;
+}
+
+.credits-sidebar li {
+    float: none;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 29.4% 0 14.7%;
+}
+
+.design-pick li:first-child {
+    border-top: 0;
+}
+
+.design-pick li:hover,
+.design-pick li:focus {
+    background: none;
+}
+
+.designs {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 310px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 66%, rgba(33, 84, 95, 0.3) 66%, rgba(33, 84, 95, 0) 100%);
+}
+
+.designs nav {
+    display: block;
+    position: absolute;
+    right: 1%;
+    top: 120px;
+    width: 32%;
+}
+
+.designs li {
+    margin: 0;
+}
+
+.designs .viewall a,
+.designs a::before {
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+.designs .viewall a:hover,
+.designs a:hover::before {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.credits-sidebar {
+    position: absolute;
+    top: 1310px;
+    right: 0;
+    width: 34%;
+    background: transparent;
+}
+
+.credits-sidebar h3 {
+    display: none;
+}
+
+.credits-sidebar ul {
+    width: 55.9%;
+    margin: 0 29.4% 0 14.7%;
+}
+
+.credits-sidebar li {
+    padding: 1.5em 0 1.25em 0;
+    margin: 0;
+}
+
+
+}
 @media only screen and (min-width: 1150px) {
     footer a {
         width: 76px;
@@ -874,129 +877,26 @@ footer a.zen-github:focus::before {
         padding: 76px 0 0 0;
         margin: 0 3em;
     }
+    
     footer a::before {
         font-size: 72px;
     }
 }
 
-@media only screen and (min-width: 1120px) {
-    .zen-resources {
-        top: 1490px;
-    }
-}
-
-@media only screen and (min-width: 1240px) {
-    .zen-resources {
-        top: 1460px;
-    }
-}
-
-@media only screen and (min-width: 1260px) {
-    .zen-resources {
-        top: 1420px;
-    }
-}
-
-@media only screen and (min-width: 1320px) {
-    .zen-resources {
-        top: 1390px;
-    }
-}
-
-@media only screen and (min-width: 1370px) {
-    .zen-resources {
-        top: 1360px;
-    }
-}
-
-@media only screen and (min-width: 1520px) {
-    .zen-resources {
-        top: 1330px;
-    }
-}
-
-@media only screen and (min-width: 1812px) {
-    .zen-resources {
-        top: 1300px;
-    }
-}
-
-@media only screen and (min-width: 1848px) {
-    .zen-resources {
-        top: 1270px;
-    }
-}
-
-@media only screen and (min-width: 2015px) {
-    .zen-resources {
-        top: 1240px;
-    }
-}
-
-@media only screen and (min-width: 2115px) {
-    .zen-resources {
-        top: 1210px;
-    }
-}
-
-@media (min--moz-device-pixel-ratio: 1.5),
-(-o-min-device-pixel-ratio: 3 / 2),
-(-webkit-min-device-pixel-ratio: 1.5),
-(min-device-pixel-ratio: 1.5),
-(min-resolution: 1.5dppx) {
-    header {
-        background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/huntington.jpg);
-        background-size: 50% auto, auto, auto, cover;
-    }
-    .requirements p:last-child {
-        background-image: url(http://www.csszengarden.com/214/contours@2x.png), url(http://www.csszengarden.com/214/gridlines.png), url(http://www.csszengarden.com/214/noise.png), url(http://www.csszengarden.com/214/koi.jpg);
-        background-size: 50% auto, auto, auto, cover;
-    }
-    .design-archives nav {
-        right: 3%;
-        width: 29%;
-    }
-}
-
-
-/*! CSS Used keyframes */
-
-@-webkit-keyframes koan {
-    from {
-        -webkit-transform: scale(1);
-        opacity: 1;
-    }
-    to {
-        -webkit-transform: scale(3);
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes koan {
-    from {
-        -moz-transform: scale(1);
-        opacity: 1;
-    }
-    to {
-        -moz-transform: scale(3);
-        opacity: 0;
-    }
-}
-
+/*override*/
 @keyframes koan {
     from {
         transform: scale(1);
         opacity: 1;
     }
+    
     to {
         transform: scale(3);
         opacity: 0;
     }
 }
 
-
-/*! CSS Used fontfaces */
-
+/*image and font overrides*/
 @font-face {
     font-family: 'Libre Baskerville';
     font-style: italic;
@@ -1004,7 +904,6 @@ footer a.zen-github:focus::before {
     src: local('Libre Baskerville Italic'), local('LibreBaskerville-Italic'), url(http://fonts.gstatic.com/s/librebaskerville/v5/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWx8QDO-WyrubOA.woff2) format('woff2');
     unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 @font-face {
     font-family: 'Libre Baskerville';
     font-style: italic;
@@ -1012,7 +911,6 @@ footer a.zen-github:focus::before {
     src: local('Libre Baskerville Italic'), local('LibreBaskerville-Italic'), url(http://fonts.gstatic.com/s/librebaskerville/v5/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDO-Wyrs.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 @font-face {
     font-family: 'Libre Baskerville';
     font-style: normal;
@@ -1020,7 +918,6 @@ footer a.zen-github:focus::before {
     src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(http://fonts.gstatic.com/s/librebaskerville/v5/kmKnZrc3Hgbbcjq75U4uslyuy4kn0qNXaxMaC82U-ro.woff2) format('woff2');
     unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 @font-face {
     font-family: 'Libre Baskerville';
     font-style: normal;
@@ -1028,7 +925,6 @@ footer a.zen-github:focus::before {
     src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(http://fonts.gstatic.com/s/librebaskerville/v5/kmKnZrc3Hgbbcjq75U4uslyuy4kn0qNZaxMaC82U.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 @font-face {
     font-family: 'Julius Sans One';
     font-style: normal;
@@ -1036,7 +932,6 @@ footer a.zen-github:focus::before {
     src: local('Julius Sans One'), local('JuliusSansOne-Regular'), url(http://fonts.gstatic.com/s/juliussansone/v6/1Pt2g8TAX_SGgBGUi0tGOYEga5WOzHsXy6KHHow-.woff2) format('woff2');
     unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
 @font-face {
     font-family: 'Julius Sans One';
     font-style: normal;
@@ -1044,7 +939,6 @@ footer a.zen-github:focus::before {
     src: local('Julius Sans One'), local('JuliusSansOne-Regular'), url(http://fonts.gstatic.com/s/juliussansone/v6/1Pt2g8TAX_SGgBGUi0tGOYEga5WOwnsXy6KHHg.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 @font-face {
     font-family: 'verdemoderna';
     src: url(http://www.csszengarden.com/214/verdemoderna.eot);
