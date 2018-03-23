@@ -20,20 +20,30 @@ axios.post("https://api.vschool.io/heaven/todo", {
             "</li>"
     });
 
+function todoStorage(id) {
+
+}
 //CREATE AN OBJECT WITH KEYS = TO EMPTY STRINGS ""
 var myData = {
-        title: "",
-        price: "",
-        description: "",
-        imgUrl: ""
-    }
-    //SET THE INPUTS ON DOM
+    title: "",
+    price: "",
+    description: "",
+    imgUrl: "",
+    updatedPrice: "",
+    updatedDescription: ""
+};
+//SET THE INPUTS ON DOM
 var form = document.getElementById("form");
 var title = document.getElementById("title");
 var price = document.getElementById("price");
 var description = document.getElementById("description");
 var imgUrl = document.getElementById("imgUrl");
-var update = document.getElementById("update");
+var updatedPrice = document.getElementById("updatedPrice");
+var updatePriceButton = document.getElementById("updatePriceButton");
+var updatedDescription = document.getElementById("updatedDescription");
+var updatedDescriptionButton = document.getElementById("updatedDescriptionButton");
+var updatePrice = document.getElementById("updateButton");
+var deleteButton = document.getElementById("deleteButton");
 
 
 
@@ -49,6 +59,13 @@ description.addEventListener("input", function(event) {
 imgUrl.addEventListener("input", function(event) {
     myData.imgUrl = event.target.value;
 })
+
+updatedPrice.addEventListener("input", function(event) {
+    myData.updatedPrice = event.target.value;
+})
+updatedDescription.addEventListener("input", function(event) {
+    myData.updatedDescription = event.target.value;
+})
 form.addEventListener("submit", function(e) {
     event.preventDefault();
     axios.post("https://api.vschool.io/heaven/todo", myData).then(function(response) {
@@ -56,18 +73,59 @@ form.addEventListener("submit", function(e) {
     })
 })
 
-//PUT REQUEST need id included after the / that has your name
-form.update.addEventListener("submit", function(e) {
+// function markToDoCompleted(id) {
+//     axios / put(`https://api.vschool.lelanavilla/todo/${todo._id}`, { complete: !todo.completed }).then(function(response) {
+//             const span = document.querySelector(`${todo._id}`) > span `)
+//         span.style.color ="gray
+//     }
+// })
+//     _id}`)
+//     }
+
+// function createTodoLi(todo) {
+//     return `
+// <li id = "${todo._id}">
+// <button onlick="deleteItem('${todo._id}')">x</button>
+
+
+function updatedPriceTodo(priceToUpdate) {
+    form.updatePriceButton.addEventListener("submit", function(e) {
+            event.preventDefault();
+            axios.put("https://api.vschool.io/lelanavilla/todo/" + priceToUpdate._id, { description: myData.updatedPrice }).then(function(response) {
+                alert("Your update was successfully completed");
+            }, function(response) {
+                alert("There was a problem with your update, try again");
+            })
+        },
+        function updatedDescriptionTodo(descriptionToUpdate) {
+            form.updateDescriptionButton.addEventListener("submit", function(e) {
+                    event.preventDefault();
+                    axios.put("https://api.vschool.io/lelanavilla/todo/" + descriptionToUpdate._id, { description: myData.updatedDescription }).then(function(response) {
+                        alert("Your update was successfully completed");
+                    }, function(response) {
+                        alert("There was a problem with your update, try again");
+                    })
+                })
+                //PUT REQUEST need id included after the / that has your name
+
+
+        })
+}
+
+
+
+//DELETE REQUEST-probably needs ref id for todo item to delete
+// function deleteTodo(id) {
+//     axios.delete(` https: //api.vschool.io/lelanavilla/todo" + ${id}`).then(function(response) {
+//             document.getElementById("_id").remove();
+//             alert("Your item was removed successfully");
+//         },
+//         function(response) {
+//             alert("There was a problem with your delete request.");
+//         })
+
+
+form.deleteButton.addEventListener("delete", function(e) {
     event.preventDefault();
-    axios.put("https://api.vschool.io/lelanavilla/todo").then(function(response) {
-        console.log(response.data);
-    })
-})
-
-//"_id":"ç"
-//sessionId:"lelanavilla"
-
-axios.put("https://api.vschool.io/lelanavilla/todo/5aaff511eec94d291400aeed", { title: "Finish put Request" }).then(function(response) {
-    console.log(response.data);
-
+    deleteTodo();
 })

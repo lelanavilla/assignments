@@ -1,10 +1,15 @@
-myStorage = window.localStorage;
-var clicked = myStorage.getItem("click", window.event);
+var counter;
+$('#btn').click(function() {
+    if (localStorage.getItem("click")) {
+        counter = localStorage.getItem("click");
+        counter++;
+        localStorage.setItem("click", counter);
+        $('#TextBox').val(counter);
+    } else {
+        counter = 0;
+        counter++;
+        localStorage.setItem("click", counter);
+        $('#TextBox').val(counter);
 
-myStorage.addEventListener("click", function(event) {
-    if (window.event === "click") {
-        this.localStorage.setItem("num", num);
-        num++;
     }
 });
-console.log("i clicked");

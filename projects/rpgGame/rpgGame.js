@@ -34,7 +34,7 @@ var ask = require('readline-sync');
 console.log('\nHi, welcome to your Colossal Adventure!\n');
 var name = ask.question("What's your name? \n");
 //use set name in sentence bewaring the player of the craziness of the game
-console.log(name + " time to begin! Hold on! Beware, its crazy here, never know what you'll encounter...");
+console.log(name + " time to begin! Hold on! Beware, its crazy here, \nnever know what you'll encounter...");
 //call beginning of the game function
 startWalking();
 //in beginning function set players option for walking, checking inventory, and quitting game
@@ -90,15 +90,15 @@ function startWalking() {
         var ranNum = Math.floor(Math.random() * 20);
         if (ranNum <= 5) {
             enemyIs = enemy[0].name
-            console.log("Out of nowhere, your" + enemyIs + " appears, and come rushing toward you!");
+            console.log("Out of nowhere, your " + enemyIs + " appears, and come rushing toward you!");
             whatToDo();
         } else if (ranNum > 5 && ranNum <= 10) {
             enemyIs = enemy[1].name;
-            console.log("Suddenly a giant" + enemyIs + " jumps out at you. Trying to squirt you with a poisonous slime-like substance!");
+            console.log("Suddenly a giant " + enemyIs + " jumps out at you. Trying to squirt you with a poisonous slime-like substance!");
             whatToDo();
         } else if (ranNum > 10 && ranNum <= 20) {
             enemyIs = enemy[2].name;
-            console.log("Shit! You thought everything was cool, until a bullet flies by your head. You turn to see what is shooting at you, and see an angry" + enemyIs + " with a gun!")
+            console.log("Shit! You thought everything was cool, until a bullet flies by your head. You turn to see what is shooting at you, and see an angry " + enemyIs + " with a gun!")
             whatToDo();
         }
     }
@@ -151,6 +151,7 @@ function startWalking() {
         if (whoWins === 1 && playerInfo.hp > 0) {
             console.log("You kicked the enemies ass. Right on!")
             youWon();
+            getItem();
 
         } else {
             playerInfo.hp = 0;
@@ -188,9 +189,13 @@ function startWalking() {
                 startWalking();
             } else if (playerInfo.hp > 0 && enemyIs === enemy[1]) {
                 playerInfo.inventory.push(enemy[1].inventory++);
+                console.log("You look down and see a knife, you pick it up cuz it make come in handy later");
+                startWalking();
+            } else if (playerInfo.hp > 0 && enemyIs === enemy[2]) {
+                playerInfo.inventory.push(enemy[2].inventory++);
+                console.log(" That crazy midget dropped his gun, you run to get it, and put it in your inventory.")
                 startWalking();
             } else {
-                playerInfo.inventory.push(enemy[2].inventory++);
                 startWalking();
             }
 

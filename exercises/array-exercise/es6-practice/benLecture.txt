@@ -1,0 +1,175 @@
+SPREAD OPERATOR IN ES6
+denoted by three dots
+syntax: myFunction(...iterableObject);
+*it takes information and spreads it out
+**MAKES ADDING THINGS TO ARRAYS AND STRINGS MUCH EASIER BY MAKING SPACE IN BETWEEN A SPECIFIC SPOT WITHIN AN ARRAY OR STRING
+**A REGULAR USE OF SPREAD IS TO COPY ARRAYS**
+const orig = [1,2,3,4,5];
+const copy = [...orig];
+
+(you cant just use const copy = orig; because it doesnt represent a spot in the document; just creates a copy)
+like if you enter :
+const orig = [1,2,3,4,5];
+const copy = [...orig];
+orig[2] = 10;
+console.log(copy)// will enter [1,2,10,3,4,5];
+
+WORKS ON STRINGS AND OBJECTS AS WELL
+
+const objOrig ={
+    key:"value"
+}
+const copyObj ={
+    ...objOrig,
+    newKey:"newVal"
+};
+//would copy the objOrig within the const copyObj
+// and add a new key:value to it
+
+
+ONE USE CASE FOR THIS IS:
+if you dont know how many arguments your function will use ahead of time
+EXAMPLE:
+//suppose you have two arrays
+const num1 =[1,2,3,4,5];
+const num2 =[6,7,8,9,10];
+//to put the two arrays together
+const num3 = num1.concat(num2);
+//to put num2 before num1 when combined
+const num 3 = num2.concat(num1);
+//if you wanted to insert num2 after 1,2 in the num1 array you can:
+const num3 =[1,2,...num2, 3,4,5];
+OR
+const num3 =[...num2...num1];
+SPREAD WORKS ON STRINGS AS WELL
+
+DESTRUCTURING (REMOVING THINGS FROM ARRAYS, STRINGS, OBJECTS)
+
+EXAMPLE: 
+const names = ["lelana", "will", "allie", "matt"];
+//to reference a string in an array in ES6
+let [lelana, , ,allie, matt] = names;
+ THE ABOVE DOESNT REASSIGN THE CONST names
+ its the same as saying
+ let lelana = names[0], allie = names[2], matt = names[3];
+
+
+// if you console.logged(a,b,c)
+EXAMPLE:
+const names = ["lelana", "will", "allie", "matt"];
+let [a, , ,b,c] = names;
+console.log(a,b,c);
+you get back [lelana, allie, matt];
+
+
+DESTRUCTURING OBJECTS
+EXAMPLE:
+const house -{
+    bedrooms :4,
+    bath:3,
+    kitchen : 1.5,
+    price: 1000000
+}
+//to destructure an OBJECT if you only want to console.log specific items
+//you create a const object and set keys object literals
+EXAMPLE :
+const{
+    bedrooms,
+    bath,
+    kitchen,
+    price
+    //to set a default value for an key that isnt there like:
+    location =""
+    //if the value isnt there  it just sets to 0;
+}=house;
+
+console.log(`For Sale: \nBedrooms: ${bedrooms} \nBathrooms: ${bath}`);
+
+USING THE SPREAD OPERATOR IN FUNCTION ARGUMENTS:
+
+fucntion unknownArgs(...args){
+    args.forEach(function (arg){
+        console.log(arg);
+    });
+}
+unknownArgs(1,4,6,"test",true, false);
+
+let is a block scope variable declaration
+var is a local block scope variable declaration
+what block scope means is a block of code is destinated by the curly braces
+so if a var is declared globally as a different num like 10
+in a function a new var x set to 11 DOESNT override the global value.
+
+BUT inside a while, for , if, switch block
+if you put var x = 11 inside one of these blocks
+that var x = 11 WILL override the global value of x.
+but only in these type of blocks
+EXAMPLE:
+
+var x =10;
+
+if(true){
+    var x = 11;
+}
+console.log(x);// would equal 11
+
+ LET EXAMPLE:
+you cant override a LET with a VAR
+but you CAN override a VAR with a LET
+
+always use CONST but if you throw an error
+about the variable not defined
+try using LET
+
+TEMPLATE LITERALS
+
+OLD WAY 
+var name = "Ben";
+var age = 20;
+console.log("hello, my name is " + name + "and I am " + age "years old");
+
+
+NEW WAY-USING BACK TICKS AND ${}
+you can now say the same message you console.logged above as:
+
+console.log(`hello my name is  ${name} and I am ${age} years old`);
+// IF YOU USE DOUBLE QUOTES INSIDE A TEMPLATE LITERAL IT WILL JUST READ THE LETTERS  INSIDE THE "" AS A STRING
+
+you can also insert javascript expressions into the curly brackets
+EXAMPLE:
+console.log(`hello Im ${name} and I am ${age + 1} years old`);
+
+DEFAULT PARAMETERS IN ES6
+
+//you have a function that your not sure if that parameter is going to be passed in when the function gets called you:
+EXAMPLE:
+//you want take x to the power of y
+
+function exponent(x,y){
+    return Math.pow(x,y);
+
+}
+console.log(exponent(4,7));
+
+
+IF YOU DONT HAVE THE Y  YOU CAN USE DEFAULT PARAMETERS
+EXAMPLE:
+function exponent(x,y =2){
+    return Math.pow(x,y);
+}
+console.log(3,//without a y it sets the y to = 2)
+console.log(3,3)//would return because y was provided and the y =2 is overrided to whatever the y is set to in the console.log
+
+
+SAME AS ES5
+
+function exponent(x,y){
+    if ( y === undefined){
+        return MAth.pow(x,2);
+    }else{
+        reutrn Math.pow(x,y);
+    }
+}
+console.log(exponent(3));
+
+

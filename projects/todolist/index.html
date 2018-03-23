@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>TODO List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 
@@ -37,24 +37,35 @@
         <div>
             <h3>Description:</h3>
             <input type="text" id="description">
-            <HR>
+            <hr>
             <h3>Add ImageURL:</h3>
             <input type="text" id="imgUrl" placeholder="Enter URL of image to UpLoad">
-            <hr>
+
             <button type="submit" id="submit">Submit</button>
             <br>
+            <button class="delete" type="delete" id="deleteButton">Delete</button>
 
+            <h3>Update a TODO </h3>
+            <label>ToDo #:</label>
             <input type="text" id="refId" placeholder="Enter ID # to Update">
-            <button type="submit" id="update">Update</button>
-            <br>
-            <button type="submit" id="delete">Delete</button>
-            <br>
-            <h3> Task Complete</h3>
-            <hr>
-            <section id="checkbox-section">
-                <h5>Yes</h5> <input type="checkbox" id="completed-yes">
-                <h5>No</h5> <input type="checkbox" id="completed-no">
-            </section>
+            <label>New Price</label>
+            <input type="text" id="updatedPrice" placeholder="New Price" />
+            <button type="submit" id="updatePriceButton"></button>
+            <label>New Description: </label>
+            <input type="text" id="updatedDescription" placeholder="New Description" />
+            <button type="submit" id="updateDescriptionButton"></button>
+
+            <div class="complete">
+                <label>Task Complete</label>
+                <br>
+                <br>
+                <h3>Yes</h3>
+                <input type="checkbox" id="completed-yes">
+                <span></span>
+                <span></span>
+                <h3>No</h3>
+                <input type="checkbox" id="completed-no">
+            </div>
 
         </div>
     </form>

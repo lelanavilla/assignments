@@ -22,22 +22,6 @@
     
     
     
-        View source is a feature, not a bug. Thanks for your curiosity and
-        interest in participating!
-    
-        Here are the submission guidelines for the new and improved csszengarden.com:
-    
-        - CSS3? Of course! Prefix for ALL browsers where necessary.
-        - go responsive; test your layout at multiple screen sizes.
-        - your browser testing baseline: IE9+, recent Chrome/Firefox/Safari, and iOS/Android
-        - Graceful degradation is acceptable, and in fact highly encouraged.
-        - use classes for styling. Don't use ids.
-        - web fonts are cool, just make sure you have a license to share the files. Hosted 
-          services that are applied via the CSS file (ie. Google Fonts) will work fine, but
-          most that require custom HTML won't. TypeKit is supported, see the readme on this
-          page for usage instructions: https://github.com/mezzoblue/csszengarden.com/
-    
-        And a few tips on building your CSS file:
     
         - use :first-child, :last-child and :nth-child to get at non-classed elements
         - use ::before and ::after to create pseudo-elements for extra styling
@@ -48,13 +32,22 @@
             
     -->
 
-<body id="css-zen-garden" style="">
+<body id="css-zen-garden">
     <div class="page-wrapper">
 
         <section class="intro" id="zen-intro">
             <header role="banner">
-                <h1>CSS Zen Garden</h1>
-                <h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
+                <div class="animation-container">
+                    <div class="design-archives">
+                        <div class="main-title-animated-text">
+                            CSS Zen Garden
+                        </div>
+
+                        <div class="main-subtitle">The Beauty of
+                            <abbr title="Cascading Style Sheets">CSS</abbr> Design
+                        </div>
+                    </div>
+                </div>
             </header>
 
             <div class="summary" id="zen-summary" role="article">
