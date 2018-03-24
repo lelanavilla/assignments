@@ -1,42 +1,38 @@
-function leastToGreatest(arr) {
-    return arr.sort();
+// function leastToGreatest(arr) {
+//     return arr.sort();
 
-}
+// }
 
-leastToGreatest([1, 3, 5, 2, 90, 20]);
-
-
-
-function leastToGreatest(arr) {
-    return arr.sort().reverse();
-
-}
-
-leastToGreatest([1, 3, 5, 2, 90, 20]);
-
-function lengthSort(arr) {
-    return arr.sort(arr <= arr.length);
-
-}
-
-lengthSort(["dog", "wolf", "by", "family", "eaten"]);
+// leastToGreatest([1, 3, 5, 2, 90, 20]);
 
 
-function alphabetical(words) {
-    return words.filter(function(word) {
-            return word.filter(function(letters) {
-                return letters.filter(function(letter) {
-                    return letter.toCharCode(function(num) {
-                        return num.sort();
-                        return num.charCodeAt().sort();
 
+// function leastToGreatest(arr) {
+//     return arr.sort().reverse();
 
+// }
+
+// leastToGreatest([1, 3, 5, 2, 90, 20]);
+
+// function lengthSort(arr) {
+//     return arr.sort(arr <= arr.length);
+
+// }
+
+// lengthSort(["dog", "wolf", "by", "family", "eaten"]);
+
+const alphabetical = (arr => {
+            let arrString = arr.toString().split(", ");
+            const firstLetter = (() => {
+                    arrString.forEach(str => {
+                        str(0) = arrString.sort();
+                        firstLetter.join(", ");
                     });
-                });
-            });
 
-        }
-    });
-}
 
-alphabetical(["dog", "wolf", "by", "family", "eaten"]);
+                }
+                console.log(firstLetter);
+
+
+
+            }); alphabetical(["dog", "wolf", "by", "family", "eaten"]);

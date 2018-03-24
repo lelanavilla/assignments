@@ -1,0 +1,1992 @@
+/*! CSS Used from: Embedded */
+
+.loadscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    background-color: #0C13FF;
+    transform: translate(0, 0);
+}
+
+.loadscreen__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65px;
+    height: 65px;
+    background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/range_svgs/loadinglogo.svg);
+    background-size: 65px 65px;
+    animation-name: rockloader;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+
+/*! CSS Used from: Embedded */
+
+.neonlabsimg__bg {
+    background-image: url(https://www.neonplus.co.uk/wp-content/uploads/fly-images/357/labs-image-mobile-768x474-c.jpg);
+}
+
+@media all and (min-width: 768px) {
+    .neonlabsimg__bg {
+        background-image: url(https://www.neonplus.co.uk/wp-content/uploads/fly-images/626/craftsmanship-header-656x862-c.jpg);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.meettheteamblock__bg {
+    background-image: url(https://www.neonplus.co.uk/wp-content/uploads/fly-images/358/meettheteam-mobile-768x474-c.jpg);
+}
+
+@media all and (min-width: 768px) {
+    .meettheteamblock__bg {
+        background-image: url(https://www.neonplus.co.uk/wp-content/uploads/fly-images/627/meet-the-team-header-400x400-c.jpg);
+    }
+}
+
+
+/*! CSS Used from: https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/css/main.css?ver=4.9.4&devbproto-refresh=0.9706331743165935 */
+
+a,
+body,
+div,
+footer,
+h2,
+h3,
+h5,
+header,
+i,
+img,
+li,
+nav,
+p,
+section,
+span,
+sup,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+*,
+:after,
+:before {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 100%;
+    line-height: 1.3;
+}
+
+p {
+    font-size: 1em;
+    margin: 0 0 2em;
+    line-height: 1.4;
+}
+
+@media (min-width:768px) {
+    p {
+        font-size: 1.1428571429em;
+    }
+}
+
+@media (min-width:1024px) {
+    p {
+        font-size: 1.2857142857em;
+    }
+}
+
+h2,
+h3,
+h5 {
+    font-size: 1.7142857143em;
+}
+
+button,
+h2,
+h3,
+h5 {
+    font-family: ff-speak-web, sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: .6em;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@media (min-width:768px) {
+    h2,
+    h3,
+    h5 {
+        font-size: 1.8571428571em;
+    }
+}
+
+@media (min-width:1024px) {
+    h2,
+    h3,
+    h5 {
+        font-size: 2.1428571429em;
+    }
+}
+
+a {
+    color: #333;
+    transition: color .2s ease-out;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+sup {
+    font-size: 50%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -.5em;
+}
+
+.container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (min-width:768px) {
+    .container {
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+}
+
+.homecontentspacer {
+    height: 200vh;
+}
+
+section.paraitems .container {
+    position: relative;
+}
+
+@media (min-width:768px) {
+    section.paraitems .container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .stickblock {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 120px;
+    }
+}
+
+@media (min-width:1024px) {
+    section.paraitems .container {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+.grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -50px;
+}
+
+.grid__item {
+    display: inline-block;
+    padding-left: 50px;
+    vertical-align: top;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width:701px) and (max-width:1023px) {
+    .lap--one-half {
+        width: 50%;
+    }
+    .lap--one-third {
+        width: 33.333%;
+    }
+    .lap--two-thirds {
+        width: 66.666%;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .desk--one-half {
+        width: 50%;
+    }
+    .desk--one-third {
+        width: 33.333%;
+    }
+    .desk--two-thirds {
+        width: 66.666%;
+    }
+}
+
+.mainheader {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 68px;
+    z-index: 20;
+    padding-top: 24px;
+}
+
+.mainheader .container {
+    position: relative;
+}
+
+.site-branding {
+    position: absolute;
+    z-index: 2;
+    display: inline;
+    width: 50%;
+}
+
+.mainlogo a {
+    background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite.png);
+    background-position: -84px -45px;
+    background-repeat: no-repeat;
+    width: 152px;
+    height: 35px;
+    outline: none;
+    display: block;
+    text-indent: -9999px;
+    margin-top: 4px;
+    position: relative;
+    z-index: 3;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min--moz-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (min-resolution:192dpi) {
+    .mainlogo a {
+        background-size: 348px 312px;
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite@2x.png);
+    }
+}
+
+@media (min-width:768px) {
+    .mainlogo a {
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite.png);
+        background-position: -84px 0;
+        background-repeat: no-repeat;
+        width: 194px;
+        height: 45px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:768px),
+only screen and (min--moz-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (min-resolution:192dpi) and (min-width:768px) {
+    .mainlogo a {
+        background-size: 348px 312px;
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite@2x.png);
+    }
+}
+
+.togglenav {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    border: 2px solid #fff;
+    background-color: transparent;
+    -webkit-appearance: none;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    transition: opacity .3s ease;
+    z-index: 2;
+}
+
+.togglenav .togglenav__line:after,
+.togglenav .togglenav__line:before {
+    content: "";
+    display: block;
+    width: 18px;
+    background-color: #fff;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transition: transform .3s ease;
+    transform-origin: center center;
+}
+
+.togglenav .togglenav__line:before {
+    transform: translate(-50%, -4px);
+}
+
+.togglenav .togglenav__line:after {
+    transform: translate(-50%, 4px);
+}
+
+.btngallery {
+    display: none;
+}
+
+.btngallery:after {
+    background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite.png);
+    background-position: -314px -208px;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min--moz-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (min-resolution:192dpi) {
+    .btngallery:after {
+        background-size: 348px 312px;
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite@2x.png);
+    }
+}
+
+@media (min-width:768px) {
+    .mainheader {
+        height: 100px;
+        padding-top: 45px;
+    }
+    .mainlogo a {
+        position: relative;
+    }
+    .togglenav {
+        height: 52px;
+        width: 52px;
+        right: 34px;
+    }
+    .togglenav .togglenav__line:after,
+    .togglenav .togglenav__line:before {
+        width: 25px;
+    }
+    .togglenav:hover {
+        opacity: .6;
+        filter: alpha(opacity=60);
+    }
+}
+
+@media (min-width:1024px) {
+    .btngallery {
+        display: block;
+        position: absolute;
+        right: 106px;
+        top: 0;
+        border: 2px solid #fff;
+        background-color: transparent;
+        -webkit-appearance: none;
+        border-radius: 100%;
+        height: 52px;
+        width: 52px;
+        transition: opacity .3s ease;
+        z-index: 2;
+    }
+    .btngallery:hover {
+        opacity: .6;
+        filter: alpha(opacity=60);
+    }
+    .btngallery:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.mainfooter {
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.mainfooter .btn--blue {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.mainfooter a {
+    color: #fff;
+}
+
+.mainfooter__links__medlrg {
+    display: none;
+}
+
+.icon--facebook {
+    background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite.png);
+    background-position: -170px -120px;
+    background-repeat: no-repeat;
+    width: 62px;
+    height: 62px;
+    display: inline-block;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min--moz-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (min-resolution:192dpi) {
+    .icon--facebook {
+        background-size: 348px 312px;
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite@2x.png);
+    }
+}
+
+@media (min-width:768px) {
+    .icon--facebook {
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite.png);
+        background-position: -232px -120px;
+        background-repeat: no-repeat;
+        width: 42px;
+        height: 42px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:768px),
+only screen and (min--moz-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (min-resolution:192dpi) and (min-width:768px) {
+    .icon--facebook {
+        background-size: 348px 312px;
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite@2x.png);
+    }
+}
+
+.icon--twitter {
+    background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite.png);
+    background-position: 0 -208px;
+    background-repeat: no-repeat;
+    width: 62px;
+    height: 62px;
+    display: inline-block;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min--moz-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (min-resolution:192dpi) {
+    .icon--twitter {
+        background-size: 348px 312px;
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite@2x.png);
+    }
+}
+
+@media (min-width:768px) {
+    .icon--twitter {
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite.png);
+        background-position: -272px -208px;
+        background-repeat: no-repeat;
+        width: 42px;
+        height: 42px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:768px),
+only screen and (min--moz-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (min-resolution:192dpi) and (min-width:768px) {
+    .icon--twitter {
+        background-size: 348px 312px;
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite@2x.png);
+    }
+}
+
+.icon--facebook,
+.icon--twitter {
+    transition: opacity .2s ease;
+}
+
+.icon--facebook:hover,
+.icon--twitter:hover {
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
+.mainfooter__links__sml h5 {
+    font-family: Work Sans, arial, sans-serif;
+    text-transform: none;
+    font-weight: 400;
+    margin-bottom: 1.2em;
+    font-size: 1em;
+}
+
+.mainfooter__links__sml .icon--facebook {
+    margin-right: 16px;
+}
+
+.mainfooter__links__sml .icon--facebook,
+.mainfooter__links__sml .icon--twitter {
+    margin-bottom: 20px;
+}
+
+.mainfooter__links__sml li {
+    padding: 10px 0;
+    display: block;
+}
+
+.mainfooter__links__sml li:first-child {
+    border-bottom: 1px solid #838181;
+}
+
+@media (min-width:768px) {
+    .mainfooter {
+        text-align: left;
+        padding-bottom: 10px;
+    }
+    .mainfooter .btn--blue {
+        margin-left: auto;
+        margin-right: auto;
+        width: 290px;
+        display: block;
+        margin-bottom: 50px;
+    }
+    .mainfooter h5 {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 6px;
+        font-size: 1em;
+        text-transform: none;
+        letter-spacing: 1px;
+        font-family: Work Sans, arial, sans-serif;
+        font-weight: 400;
+    }
+    .mainfooter .mainfooter__socials {
+        display: inline-block;
+        position: relative;
+        top: -12px;
+    }
+    .mainfooter .mainfooter__socials .icon--facebook,
+    .mainfooter .mainfooter__socials .icon--twitter {
+        margin-right: 6px;
+    }
+    .mainfooter__links__medlrg {
+        display: block;
+        border-top: 1px solid #838181;
+        padding-top: 40px;
+    }
+    .mainfooter__links__medlrg li {
+        display: inline-block;
+    }
+    .mainfooter__links__medlrg li:first-child:after,
+    .mainfooter__links__medlrg li:nth-of-type(2n):after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 1px;
+        height: 20px;
+        background-color: #838181;
+        margin: 0 8px;
+    }
+    .mainfooter__links__sml {
+        display: none;
+    }
+}
+
+@media (min-width:1024px) {
+    .mainfooter__links__medlrg h5 {
+        margin-right: 20px;
+    }
+    .mainfooter__links__medlrg li:first-child {
+        margin-left: 20px;
+    }
+    .mainfooter__links__medlrg li:first-child:after,
+    .mainfooter__links__medlrg li:nth-of-type(2n):after {
+        margin: 0 20px 0 24px;
+    }
+    .mainfooter__links__medlrg .mainfooter__socials .icon--facebook,
+    .mainfooter__links__medlrg .mainfooter__socials .icon--twitter {
+        margin-right: 20px;
+    }
+}
+
+.mainnav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    transform: translateX(100%);
+    background-color: #1c1e2b;
+    padding: 130px 20px 0;
+    overflow: auto;
+}
+
+.mainnav .menu {
+    font-size: 1.7142857143em;
+    font-family: ff-speak-web, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 100%;
+    overflow: hidden;
+}
+
+.mainnav .menu a {
+    color: #fff;
+    display: block;
+    padding-top: 18px;
+}
+
+.mainnav .menu a:after {
+    background: #fb2356;
+    background: linear-gradient(135deg, #fb2356 20%, #f5ea0f);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#000000", GradientType=0);
+    content: "";
+    display: block;
+    height: 2px;
+    margin-top: 16px;
+}
+
+.mainnav .menu li:last-child a:after {
+    display: none;
+}
+
+.mainnav .mainnav__contact {
+    text-align: center;
+    color: #fff;
+}
+
+.mainnav .mainnav__contact h5 {
+    font-family: Work Sans, arial, sans-serif;
+    letter-spacing: 1px;
+    text-transform: none;
+    margin-bottom: 10px;
+}
+
+.mainnav .mainnav__contact .btn--blue {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.mainnav .mainnav__contact .icon--facebook {
+    margin-right: 20px;
+}
+
+.mainnav h5 {
+    font-size: 1em;
+    font-weight: 400;
+    font-family: Work Sans, arial, sans-serif;
+}
+
+.secondarynav {
+    display: none;
+}
+
+@media (min-width:768px) {
+    .mainnav {
+        width: 64%;
+        padding-top: 120px;
+        padding-left: 34px;
+        padding-right: 34px;
+        overflow: visible;
+    }
+    .mainnav .menu {
+        max-width: 728px;
+        margin-top: 10%;
+    }
+    .mainnav .menu a {
+        padding-top: 30px;
+    }
+    .mainnav .menu a:after {
+        margin-top: 30px;
+    }
+    .mainnav .mainnav__contact {
+        position: absolute;
+        bottom: 50px;
+        left: 34px;
+        text-align: left;
+    }
+    .mainnav .mainnav__contact h5 {
+        display: inline-block;
+        margin-right: 30px;
+    }
+    .mainnav .mainnav__contact .btn--blue {
+        max-width: 250px;
+        margin-bottom: 70px;
+    }
+    .mainnav .mainnav__contact .mainnav__socials {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .mainnav__inner {
+        overflow: auto;
+        height: 100%;
+    }
+}
+
+@media (min-width:1024px) {
+    .mainnav {
+        padding-left: 80px;
+        width: 55%;
+    }
+    .mainnav .mainnav__contact {
+        left: 80px;
+        bottom: 50px;
+    }
+    .secondarynav {
+        display: block;
+        position: absolute;
+        right: 234px;
+        top: 16px;
+        z-index: 1;
+    }
+    .secondarynav ul:after {
+        content: "";
+        width: 1px;
+        height: 20px;
+        background-color: #fff;
+        vertical-align: middle;
+        display: inline-block;
+    }
+    .secondarynav li {
+        display: inline-block;
+        margin-right: 60px;
+    }
+    .secondarynav a {
+        color: #fff;
+        display: block;
+        position: relative;
+    }
+}
+
+.mainnav__orange {
+    background: #fb2356;
+    background: linear-gradient(135deg, #fb2356 20%, #f5ea0f);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#000000", GradientType=0);
+    position: fixed;
+    right: 100%;
+    width: 0;
+    top: 0;
+    bottom: 0;
+}
+
+@media (min-width:768px) and (max-height:860px) {
+    .mainnav .mainnav__contact {
+        position: relative;
+        bottom: inherit;
+        left: inherit;
+        padding-bottom: 50px;
+    }
+    .mainnav .mainnav__contact .btn--blue {
+        margin-top: 140px;
+    }
+}
+
+.btn--blue,
+.btn--orangediagonal {
+    -webkit-appearance: none;
+    border: 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.1428571429em;
+    border-radius: 22px;
+    padding: 10px 30px;
+    overflow: visible;
+    background-color: transparent;
+    border: 1px solid #fff;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: ff-speak-web, sans-serif;
+    letter-spacing: 2px;
+}
+
+.btn--blue span,
+.btn--orangediagonal span {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    transition: color .2s ease;
+}
+
+.btn--blue:before,
+.btn--orangediagonal:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 22px;
+    background-color: #fff;
+    transform: scaleX(0);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform-origin: center;
+    transition: opacity .8s cubic-bezier(.19, 1, .22, 1), transform 0s .4s;
+}
+
+.btn--blue:hover:before,
+.btn--orangediagonal:hover:before {
+    transform-origin: center;
+    transform: scaleX(1);
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transition: .4s cubic-bezier(.19, 1, .22, 1);
+}
+
+.btn--blue:hover span,
+.btn--orangediagonal:hover span {
+    color: #1c1e2b;
+}
+
+.btn--blue {
+    background-color: #0c13ff;
+    color: #0c13ff;
+    border: none;
+    padding: 12px 30px;
+    min-width: 280px;
+}
+
+.btn--blue span {
+    color: #fff;
+}
+
+.btn--blue:before {
+    background-color: #fff;
+}
+
+.btn--blue:hover span {
+    color: #0c13ff;
+}
+
+.btn--orangediagonal {
+    background: #fb2356;
+    background: linear-gradient(135deg, #fb2356 20%, #f5ea0f);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#000000", GradientType=0);
+    border: none;
+    padding: 12px 30px;
+    min-width: 280px;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+.slick-slider {
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list,
+.slick-slider {
+    position: relative;
+    display: block;
+}
+
+.slick-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+    transform: translateZ(0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+}
+
+.slick-track:after,
+.slick-track:before {
+    content: "";
+    display: table;
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-slide {
+    outline: none!important;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+}
+
+.slick-dots li,
+.slick-dots li button {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    border: 0;
+    background: transparent;
+    display: block;
+    outline: none;
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
+    padding: 5px;
+}
+
+.slick-dots li button:focus,
+.slick-dots li button:hover {
+    outline: none;
+}
+
+.slick-dots li button:focus:before,
+.slick-dots li button:hover:before {
+    opacity: 1;
+}
+
+.slick-dots li button:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    font-family: slick;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #fff;
+    opacity: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+    background-color: transparent;
+    color: #fff;
+    opacity: 1;
+    border: 2px solid #fff;
+    height: 12px;
+    width: 12px;
+    top: -1px;
+    left: -1px;
+}
+
+.lightup {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    height: 200vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.lightup__slide--dark,
+.lightup__slide--light {
+    height: 100vh;
+    background-size: cover;
+    background-position: 50%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.lightup__slide--dark {
+    background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/lightup-dark-sml.jpg);
+    z-index: 1;
+}
+
+.lightup__slide--light {
+    background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/lightup-light-sml.jpg);
+    z-index: 2;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.lightup__scrollto {
+    display: none;
+}
+
+@media (min-width:768px) {
+    .lightup__scrollto {
+        display: block;
+        text-transform: uppercase;
+        font-family: ff-speak-web, sans-serif;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 50px;
+        width: 100%;
+        text-align: center;
+        font-size: 1.1428571429em;
+    }
+    .lightup__slide--dark {
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/lightup-dark.jpg);
+    }
+    .lightup__slide--light {
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/lightup-light.jpg);
+    }
+}
+
+@media (min-width:500px) and (max-width:1023px) and (orientation:portrait) {
+    .lightup__slide--dark {
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/lightup-dark-med.jpg);
+    }
+    .lightup__slide--light {
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/lightup-light-med.jpg);
+    }
+    .lightup__scrollto {
+        bottom: 100px;
+    }
+}
+
+.diagonalblock,
+.diagonalblock--green,
+.diagonalblock--orange {
+    background: #0bedff;
+    background: linear-gradient(135deg, #0bedff 20%, #0a0dcc);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#000000", GradientType=0);
+    padding: 25px;
+    display: block;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.diagonalblock i {
+    background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite.png);
+    background-position: -236px -45px;
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 25px;
+    display: block;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min--moz-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (min-resolution:192dpi) {
+    .diagonalblock i {
+        background-size: 348px 312px;
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite@2x.png);
+    }
+}
+
+@media (min-width:768px) {
+    .diagonalblock i {
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite.png);
+        background-position: -278px -170px;
+        background-repeat: no-repeat;
+        width: 52px;
+        height: 34px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:768px),
+only screen and (min--moz-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (min-resolution:192dpi) and (min-width:768px) {
+    .diagonalblock i {
+        background-size: 348px 312px;
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite@2x.png);
+    }
+}
+
+.diagonalblock__bg {
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    background-color: #1c1e2b;
+    z-index: 1;
+}
+
+.diagonalblock__content {
+    position: relative;
+    z-index: 2;
+}
+
+.diagonalblock__header {
+    overflow: hidden;
+}
+
+.diagonalblock__header h3 {
+    font-size: 1.7142857143em;
+}
+
+@media (min-width:768px) {
+    .diagonalblock,
+    .diagonalblock--green,
+    .diagonalblock--orange {
+        padding: 40px;
+    }
+    .diagonalblock__header h3 {
+        font-size: 2em;
+    }
+}
+
+@media (min-width:1024px) {
+    .diagonalblock,
+    .diagonalblock--green,
+    .diagonalblock--orange {
+        padding: 50px;
+    }
+    .diagonalblock__header h3 {
+        font-size: 2.1428571429em;
+    }
+}
+
+.diagonalblock--green {
+    background: #26ff5e;
+    background: linear-gradient(135deg, #26ff5e 20%, #06a4a1);
+}
+
+.diagonalblock--green,
+.diagonalblock--orange {
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#000000", GradientType=0);
+}
+
+.diagonalblock--orange {
+    background: #fb2356;
+    background: linear-gradient(135deg, #fb2356 20%, #f5ea0f);
+}
+
+.js .diagonalblock--green h3,
+.js .diagonalblock--orange h3,
+.js .diagonalblock h3 {
+    transform: translateY(200%);
+}
+
+.js .diagonalblock--green p,
+.js .diagonalblock--orange p,
+.js .diagonalblock p {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: translateY(10%);
+}
+
+.js .diagonalblock i {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.blockimg .blockimg__inner {
+    position: relative;
+    height: 100%;
+}
+
+.blockimg h3 {
+    font-size: 1.7142857143em;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 90px;
+    color: #fff;
+    z-index: 2;
+    width: 100%;
+}
+
+.blockimg h3:after {
+    background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite.png);
+    background-position: -236px -45px;
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 25px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min--moz-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (min-resolution:192dpi) {
+    .blockimg h3:after {
+        background-size: 348px 312px;
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite@2x.png);
+    }
+}
+
+@media (min-width:768px) {
+    .blockimg h3:after {
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite.png);
+        background-position: -278px -170px;
+        background-repeat: no-repeat;
+        width: 52px;
+        height: 34px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:768px),
+only screen and (min--moz-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (min-resolution:192dpi) and (min-width:768px) {
+    .blockimg h3:after {
+        background-size: 348px 312px;
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite@2x.png);
+    }
+}
+
+@media (min-width:768px) {
+    .blockimg h3 {
+        font-size: 2em;
+    }
+}
+
+@media (min-width:1024px) {
+    .blockimg h3 {
+        font-size: 2.1428571429em;
+    }
+}
+
+.js .blockimg h3 {
+    transform: translateY(200%);
+}
+
+.discoverpanel {
+    background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/fencepanel.jpg);
+    background-size: cover;
+    background-position: 50%;
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.discoverpanel .slick-dots {
+    bottom: -170px;
+}
+
+.discoverpanel h2 {
+    font-size: 2.2857142857em;
+    margin-bottom: 0;
+}
+
+.discoverpanel .slick-current img {
+    transform: scale(1);
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transition: transform .4s ease .4s, opacity .4s ease .4s;
+}
+
+.discoverpanel .container {
+    position: relative;
+}
+
+.discoverpanel__slider {
+    margin-top: -4%;
+}
+
+.discoverpanel__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 630px;
+    transition: transform .4s ease, opacity .4s ease;
+    transform: scale(.9);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: 100%;
+    height: auto;
+}
+
+.discoverpanel__btns {
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.discoverpanel__btn--1,
+.discoverpanel__btn--2,
+.discoverpanel__btn--3,
+.discoverpanel__btn--4 {
+    cursor: pointer;
+    font-family: ff-speak-web, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: 1.1428571429em;
+    display: none;
+}
+
+.discoverpanel__btn--1 i,
+.discoverpanel__btn--2 i,
+.discoverpanel__btn--3 i,
+.discoverpanel__btn--4 i {
+    display: block;
+    background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/discoverbtn.svg);
+    background-size: cover;
+    background-position: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.discoverpanel__btn--1 i:before,
+.discoverpanel__btn--2 i:before,
+.discoverpanel__btn--3 i:before,
+.discoverpanel__btn--4 i:before {
+    background: #fb2356;
+    background: linear-gradient(135deg, #fb2356 20%, #f5ea0f);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#000000", GradientType=0);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border-radius: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: opacity .3s ease;
+}
+
+.discoverpanel__btn--1 i:after,
+.discoverpanel__btn--2 i:after,
+.discoverpanel__btn--3 i:after,
+.discoverpanel__btn--4 i:after {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.discoverpanel__btn--1 p,
+.discoverpanel__btn--2 p,
+.discoverpanel__btn--3 p,
+.discoverpanel__btn--4 p {
+    transition: opacity .2s ease;
+    opacity: 0;
+    margin-bottom: 0;
+    filter: alpha(opacity=0);
+}
+
+.is-active.discoverpanel__btn--1 {
+    display: block;
+}
+
+.is-active.discoverpanel__btn--1 :before,
+.is-active.discoverpanel__btn--1 p {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.discoverpanel__btn--1 :after {
+    background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/discover-brightness.svg);
+    height: 48px;
+    width: 48px;
+}
+
+.discoverpanel__btn--2 :after {
+    background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/discover-rgb.svg);
+    width: 48px;
+    height: 44px;
+}
+
+.discoverpanel__btn--3 :after {
+    background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/discover-versatile.svg);
+    width: 48px;
+    height: 22px;
+}
+
+.discoverpanel__btn--4 :after {
+    background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/discover-speed.svg);
+    width: 48px;
+    height: 57px;
+}
+
+.discoverpanel__made {
+    display: none;
+    background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite.png);
+    background-position: -278px 0;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 100px;
+    position: absolute;
+    right: 60px;
+    top: 180px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min--moz-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (min-resolution:192dpi) {
+    .discoverpanel__made {
+        background-size: 348px 312px;
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite@2x.png);
+    }
+}
+
+@media (min-width:1024px) {
+    .discoverpanel__made {
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 84px;
+        height: 120px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:1024px),
+only screen and (min--moz-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (min-resolution:192dpi) and (min-width:1024px) {
+    .discoverpanel__made {
+        background-size: 348px 312px;
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/sprite@2x.png);
+    }
+}
+
+@media (min-width:768px) {
+    .discoverpanel {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .discoverpanel h2 {
+        font-size: 4.5714285714em;
+    }
+    .discoverpanel .slick-dots {
+        display: none!important;
+    }
+    .discoverpanel__btns {
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .discoverpanel__btn--1,
+    .discoverpanel__btn--2,
+    .discoverpanel__btn--3,
+    .discoverpanel__btn--4 {
+        display: block;
+        width: 25%;
+    }
+    .discoverpanel__btn--1 i,
+    .discoverpanel__btn--2 i,
+    .discoverpanel__btn--3 i,
+    .discoverpanel__btn--4 i {
+        width: 95px;
+        height: 95px;
+    }
+    .discoverpanel__made {
+        display: block;
+    }
+    .discoverpanel__slider {
+        margin-top: -2%;
+    }
+}
+
+@media (min-width:1024px) {
+    .discoverpanel {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+    .discoverpanel h2 {
+        font-size: 5.1428571429em;
+    }
+    .discoverpanel__btn--1 i,
+    .discoverpanel__btn--2 i,
+    .discoverpanel__btn--3 i,
+    .discoverpanel__btn--4 i {
+        width: 112px;
+        height: 112px;
+    }
+    .discoverpanel__btn--1 :after {
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/discover-brightness.svg);
+        height: 60px;
+        width: 60px;
+    }
+    .discoverpanel__btn--2 :after {
+        width: 66px;
+        height: 60px;
+    }
+    .discoverpanel__btn--3 :after {
+        width: 64px;
+        height: 29px;
+    }
+    .discoverpanel__btn--4 :after {
+        width: 54px;
+        height: 64px;
+    }
+    .discoverpanel__made {
+        top: 120px;
+    }
+}
+
+.js .discoverpanel__header {
+    overflow: hidden;
+}
+
+.js .discoverpanel__header h2 {
+    transform: translateY(200%);
+}
+
+.whyneonimg__img {
+    background-size: cover;
+    background-position: 50%;
+    height: 0;
+    padding-bottom: 66%;
+    width: 100%;
+}
+
+.whyneonblock {
+    margin-top: 20px;
+}
+
+.meettheteamblock,
+.neonlabsimg__bg,
+.whyneonimg__img {
+    margin-left: -20px;
+    width: calc(100% + 40px);
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.meettheteamblock__bg,
+.neonlabsimg__bg {
+    background-size: cover;
+    background-position: 50%;
+    height: 0;
+    padding-bottom: 66%;
+    background-color: #000;
+    z-index: 2;
+}
+
+@media (min-width:768px) {
+    .fullwidthsml {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .whyneonblock {
+        float: right;
+        width: 50%;
+        margin-left: -25%;
+        position: relative;
+        z-index: 2;
+        padding: 50px;
+        margin-top: 30%;
+    }
+    .whyneonimg {
+        float: left;
+    }
+    .whyneonimg__img {
+        padding-bottom: 60%;
+    }
+    .neonlabsimg {
+        float: left;
+        width: 60%;
+    }
+    .blockscol2 {
+        margin-top: 20%;
+        float: right;
+        width: 50%;
+        margin-left: -10%;
+        z-index: 2;
+    }
+    .blockscol2 .diagonalblock--green,
+    .blockscol2 .diagonalblock--orange {
+        margin: 0;
+    }
+    .qualityandvaluesblock {
+        width: 100%;
+        z-index: 2;
+    }
+    .whyneonimg {
+        width: 75%;
+    }
+    .neonlabsimg {
+        width: 50%;
+    }
+    .neonlabsimg .neonlabsimg__bg {
+        padding-bottom: 140%;
+    }
+    .meettheteamblock {
+        width: 70%;
+        margin-left: 30%;
+        margin-top: -20%;
+        z-index: 3;
+        overflow: hidden;
+    }
+    .meettheteamblock__bg {
+        padding-bottom: 90%;
+    }
+    .craftmanshipblock {
+        width: 96%;
+        position: relative;
+        left: 4%;
+        margin-top: -5%!important;
+    }
+}
+
+@media (min-width:1100px) {
+    .whyneonblock {
+        width: 40%;
+        margin-left: -15%;
+    }
+    .whyneonimg {
+        width: 75%;
+    }
+    .neonlabsimg {
+        width: 50%;
+    }
+    .neonlabsimg .neonlabsimg__bg {
+        padding-bottom: 140%;
+    }
+    .meettheteamblock {
+        width: 60%;
+        margin-left: 40%;
+    }
+    .meettheteamblock__bg {
+        padding-bottom: 90%;
+    }
+    .craftmanshipblock {
+        width: 70%;
+        left: 24%;
+    }
+}
+
+.homegallery {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.homegallery img {
+    max-width: 100%;
+    display: block;
+}
+
+@media (min-width:768px) {
+    .homegallery {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        height: 100vw;
+        font-size: 0;
+    }
+    .homegallery img {
+        width: 25%;
+        height: auto;
+    }
+    .homegallery .homegalleryimg--1,
+    .homegallery .homegalleryimg--2,
+    .homegallery .homegalleryimg--3,
+    .homegallery .homegalleryimg--4 {
+        width: 12.5%;
+    }
+}
+
+:root .homegallery {
+    display: block;
+    height: inherit;
+    max-height: inherit!important;
+}
+
+:root .homegallery:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+:root .homegallery img {
+    float: left;
+    width: 20%;
+}
+
+:root .homegallery .homegalleryimg--1,
+:root .homegallery .homegalleryimg--2,
+:root .homegallery .homegalleryimg--3,
+:root .homegallery .homegalleryimg--4 {
+    width: 20%;
+}
+
+:root .homegallery .homegalleryimg--4,
+:root .homegallery .homegalleryimg--5 {
+    display: none;
+}
+
+.section--therange {
+    padding: 50px 0;
+}
+
+@media (min-width:768px) {
+    .section--therange {
+        padding: 100px 0;
+    }
+}
+
+.section--therange {
+    background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/wallsml.jpg);
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+
+.section--therange:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    z-index: 1;
+    width: 100%;
+    background: linear-gradient(180deg, transparent 0, #000);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#00000000", endColorstr="#000000", GradientType=0);
+}
+
+.section--therange img {
+    max-width: 100%;
+    display: block;
+}
+
+.section--therange .btn--orangediagonal {
+    width: 100%;
+}
+
+.section--therange__content {
+    position: relative;
+    z-index: 2;
+}
+
+@media (min-width:700px) {
+    .section--therange {
+        background-image: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/img/wall.jpg);
+    }
+    .section--therange:after {
+        display: none;
+    }
+    .section--therange .btn--orangediagonal {
+        max-width: 280px;
+    }
+}
+
+@media (min-width:768px) {
+    .section--therange {
+        padding: 100px 0 40px;
+    }
+    .section--therange h2 {
+        font-size: 2.5714285714em;
+    }
+}
+
+@media (min-width:1024px) {
+    .section--therange h2 {
+        margin-top: 60px;
+        font-size: 3em;
+    }
+}
+
+.js .discoverrange p {
+    transform: translateY(20%);
+}
+
+.js .discoverrange .btn--orangediagonal,
+.js .discoverrange p {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.js .discoverrange__header {
+    overflow: hidden;
+}
+
+.js .discoverrange__header h2 {
+    transform: translateY(200%);
+}
+
+.alr {
+    text-align: right;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.btngallery,
+.diagonalblock i,
+.discoverpanel__made,
+.icon--facebook,
+.icon--twitter {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+/*! CSS Used keyframes */
+
+@keyframes rockloader {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    25% {
+        transform: translate(-50%, -50%) rotate(20deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    75% {
+        transform: translate(-50%, -50%) rotate(-20deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+
+/*! CSS Used fontfaces */
+
+@font-face {
+    font-family: ff-speak-web;
+    src: url(https://use.typekit.net/af/7c8827/00000000000000003b9b077b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3) format("woff2"), url(https://use.typekit.net/af/7c8827/00000000000000003b9b077b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3) format("woff"), url(https://use.typekit.net/af/7c8827/00000000000000003b9b077b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3) format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Work Sans'), local('WorkSans-Regular'), url(https://fonts.gstatic.com/s/worksans/v3/QGYsz_wNahGAdqQ43Rh_cqDptfpA4cD3.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Work Sans'), local('WorkSans-Regular'), url(https://fonts.gstatic.com/s/worksans/v3/QGYsz_wNahGAdqQ43Rh_fKDptfpA4Q.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: slick;
+    src: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/fonts/slick.eot);
+    src: url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/fonts/slick.eot#iefix) format("embedded-opentype"), url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/fonts/slick.woff) format("woff"), url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/fonts/slick.ttf) format("truetype"), url(https://www.neonplus.co.uk/wp-content/themes/neonplus/dist/fonts/slick.svg#slick) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
