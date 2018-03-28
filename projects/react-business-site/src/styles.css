@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    max-width: 100%;
+    max-height: auto;
+    min-height: 100%;
+    min-width: auto;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    height: 800px;
+    background-color: black;
+    color: white;
+    font-size: 70px;
+    text-align: left;
+}
+
+.crossfade>figure {
+    animation: imageAnimation 66s linear infinite 0s;
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: center center;
+    color: transparent;
+    height: 800px;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 0;
+}
+
+.crossfade>figure:nth-child(1) {
+    background-image: url('https://i.imgur.com/4gAMpBf.jpg');
+}
+
+.crossfade>figure:nth-child(2) {
+    animation-delay: 6s;
+    background-image: url('https://i.imgur.com/YUti9WR.jpg');
+}
+
+.crossfade>figure:nth-child(3) {
+    animation-delay: 12s;
+    background-image: url('https://i.imgur.com/pNjaJgW.jpg');
+}
+
+.crossfade>figure:nth-child(4) {
+    animation-delay: 18s;
+    background-image: url('https://i.imgur.com/ZhUifWG.jpg');
+}
+
+.crossfade>figure:nth-child(5) {
+    animation-delay: 24s;
+    background-image: url('https://i.imgur.com/0DtCG77.jpg');
+}
+
+.crossfade>figure:nth-child(6) {
+    animation-delay: 30s;
+    background-image: url('https://i.imgur.com/mirLDma.jpg');
+}
+
+.crossfade>figure:nth-child(7) {
+    animation-delay: 36s;
+    background-image: url('https://i.imgur.com/MVBfMZJ.jpg');
+}
+
+.crossfade>figure:nth-child(8) {
+    animation-delay: 42s;
+    background-image: url('https://i.imgur.com/3a5nvr1.jpg');
+}
+
+.crossfade>figure:nth-child(9) {
+    animation-delay: 48s;
+    background-image: url('https://i.imgur.com/UW9MeWs.jpg');
+}
+
+.crossfade>figure:nth-child(10) {
+    animation-delay: 54s;
+    background-image: url('https://i.imgur.com/anbaQ3Q.jpg');
+}
+
+.crossfade>figure:nth-child(11) {
+    animation-delay: 60s;
+    background-image: url('https://i.imgur.com/3IxGSnT.jpg');
+}
+
+.crossfade>figure:nth-child(12) {
+    animation-delay: 66s;
+    background-image: url('https://i.imgur.com/wJ1OxPx.jpg');
+}
+
+@keyframes imageAnimation {
+    0% {
+        animation-timing-function: ease in;
+        opacity: 0%;
+    }
+    8% {
+        animation-timing-function: ease out;
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    font-size: 46px;
+    display: inline-block;
+    /* background-color: black; */
+    color: white;
+    background-color: black;
+    z-index: 0;
+    padding-left: 25px;
+    margin: 20px 0px 0px 20px;
+    text-shadow: 2px 3px red;
+    padding-bottom: 0px;
+}
+
+p {
+    padding-top: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.derek-pic>figure: nth-child(0);
+{
+    width: 300px;
+    height: 500px;
+    z-index: 1;
+    position: absolute;
+    top: 800px;
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    background-color: rgb(151, 1, 1);
+    color: white;
+    width: 30%;
+    height: 600px;
+    top: 800px;
+    right: 0px;
+    position: absolute;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 32px;
+    border: 4px double white;
+    z-index: 1;
+}
+
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.footer {
+    background-image: url("https://i.imgur.com/VlUVdzB.jpg");
+    background-color: black;
+    border-top: 10px double rgb(114, 3, 3);
+    object-fit: fill;
+    display: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 600px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 24px;
+    display: relative;
+}
+
+button {
+    background-color: black;
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    color: white;
+}
