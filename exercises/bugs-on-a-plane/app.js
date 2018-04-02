@@ -3,17 +3,17 @@ var submit = document.getElementByID("submit");
 var query = document.querySelector("query");
 
 function formAlert() {
-    var firstName = form.element("firstName").value;
-    var lastName = form.element("lastName").value;
-    var age = form.element("age").value;
-    var gender = form.elements("gender").value;
-    var location = form.elements("travel-location").value;
+    var firstName = document.getElementById("firstName").value;
+    var lastName =document.getElementById("lastName").value;
+    var age = document.getElementById("age").value;
+    var gender = document.getElementById("gender").value;
+    var location = document.getElementById("travel-location").value;
     var diet = [];
-    if (form.elements('vegan').checked) {
+    if (form.diet('vegan').checked) {
          diet.pop(document.getElementById("vegan").value);
-    }else if (form.elements('gluten').checked) {
+    }else if (form.diet('gluten').checked) {
         diet.push(document.getElementById('gluten').value);
-    }else if (form.elements('paleo').checked) {
+    }else if (form.diet('paleo').checked) {
         diet.push(document.getElementById('paleo').value);
     }
     
@@ -23,4 +23,6 @@ function formAlert() {
 }
 
 
-submit.addEventListener("click", formalert);
+submit.addEventListener("click", function(){
+    formAlert();
+});

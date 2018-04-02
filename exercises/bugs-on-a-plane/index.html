@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Travel Form</title>
 </head>
+
 <body>
     <h1>Welcome to Blah Blah Airlines!</h1>
     <p>Please fill out the folowing form so we don't accidentaly kill you, Yay...</p>
     <form id="airline-form">
-        <input type="text" name="first-name">
+        <input type="text" id="first-name">
         <label for="first-name">First Name</label>
         <br>
-        <input type="text" name="last-name">
+        <input type="text" id="last-name">
         <label for="last-name">Last Name</label>
         <br>
-        <input type="number" name="age">
+        <input type="number" id="age">
         <label for="age">Age</label>
         <br>
         <input type="radio" name="gender" value="male" id="male">
@@ -31,7 +33,7 @@
             <option class="locations" name="there" value="there">There</option>
             <option class="locations"name"somewhere-else"value="somewhere-else">Somewhere else</option>
         </select>
-        <label for="locations" >Where are you going?</label>
+        <label for="locations">Where are you going?</label>
         <br>
         <input class="diet" type="checkbox" name="vegan" id="vegan" value="vegan">
         <label for="vegan">Vegan</label>
