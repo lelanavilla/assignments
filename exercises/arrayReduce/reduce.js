@@ -1,3 +1,7 @@
+function stringAdd(arr){
+    var strArray= str.split('');
+    return 
+}
 
 function stringConcat(arr) {
 var combo= arr.toString().split(",").join('');

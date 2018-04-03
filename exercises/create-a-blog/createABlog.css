@@ -1,15 +1,26 @@
 cdbody{
 box-sizing: border-box;
 position: relative;
-}
+display:grid;
+grid-template:
+            n, n, n, n,
+             h, h, h, h, 
+            fg, c, c, sb,
+            fg, c, c, sb,
+}            f, f, f, f,
 nav{
     position:fixed;
+    grid-template:"n";
     width: 100%;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     text-align: justify;
 }
-section .blog-style{
+content{
+    display:grid;
+    grid-template: "c";
+}
+ .blog-style{
     width: 30%;
     height:auto;
     
@@ -26,8 +37,12 @@ section .blog-style{
     font-weight:bold;
     font-style: italic;
 }
-a{
+figure{
     position: absolute;
+    grid-template: "fg";
     width:30%;
     height:30%;
+}
+
+
 }

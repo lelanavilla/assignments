@@ -2,3 +2,9 @@
     color: black;
     font-family: "Impact";
 }
+
+.counter {
+    border: 3px solid black;
+    width: 300px;
+    height: 200px;
+}

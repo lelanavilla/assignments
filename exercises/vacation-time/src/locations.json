@@ -1,24 +1,29 @@
 [{
+        "img": "https://i.imgur.com/VqZvqhD.jpg",
         "place": "Meridian, Idaho",
         "price": 40,
         "timeToGo": "Spring"
     },
     {
+        "img": "https://i.imgur.com/HmculLh.jpg",
         "place": "Cancun",
         "price": 900,
         "timeToGo": "Winter"
     },
     {
+        "img": "https://i.imgur.com/S4Zfwjx.jpg",
         "place": "China",
         "price": 1200,
         "timeToGo": "Fall"
     },
     {
+        "img": "https://i.imgur.com/H47Ssim.jpg",
         "place": "Russia",
         "price": 1100,
         "timeToGo": "Summer"
     },
     {
+        "img": "https://i.imgur.com/uDq1fn7.jpg",
         "place": "Lebanon",
         "price": 400,
         "timeToGo": "Spring"

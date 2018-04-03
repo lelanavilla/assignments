@@ -1,0 +1,50 @@
+.header {
+    width: 100%;
+    height: 150px;
+    background-color: darkblue;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 100px;
+    text-align: center;
+    color: White;
+    margin: 5px;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+h3 {
+    margin: 10px;
+    font-size: 40px;
+    line-height: 1px;
+}
+
+h4 {
+    font-style: italic;
+    margin: 10px;
+    padding-left: 20px;
+}
+
+.card-container {
+    box-sizing: border-box;
+    display: block;
+    flex-direction: column;
+}
+
+.pics {
+    width: 100%;
+    height: 350px;
+    border: 2px double black;
+    box-shadow: 3px 5px darkGrey;
+}
+
+.second-row {
+    display: grid;
+    grid-row-end: 350px;
+    width: 100%;
+    height: 350px;
+}

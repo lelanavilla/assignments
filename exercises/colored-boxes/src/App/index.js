@@ -1,36 +1,31 @@
 import React from 'react';
 import Component from './Component/';
 import ".styles.css/";
-function App(){
+function App(props){
+    const box = boxComponent;
 
-    const box = {
+const {title,subtitle,info, boxColor}= props;
+    const coloredBox = [
+        {
+             title:"This is the Title",
+             subtitle:"subtitle",
+             info:"Lots of info",
+             boxColor:"teal"
+            
+            },
+        {
+            title:"This is the Title",
+            subtitle:"subtitle",
+            info:"Lots of info",
+            boxColor:"darkMagenta",
+         }
+         ] 
 
-    }
-    const data = [
-        {},
-        {},
-        {}
-    ]
-
-//  constbox1{
-//     title:"This is the Title",
-//     subtitle:"subtitle",
-//     info:"Lots of info",
-//     boxColor:"teal"
-
-// },
-// box2:{
-//     title:"This is the Title",
-//     subtitle:"subtitle",
-//     info:"Lots of info",
-//     boxColor:"darkMagenta",
-
-// }}]
 
     return(
     <div>     
          {/* <Component {}></Component> */}
-            <Component {...data[0]}></Component>
+            <Component {...Box}></Component>
         
        
 

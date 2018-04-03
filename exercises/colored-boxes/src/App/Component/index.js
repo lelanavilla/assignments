@@ -1,17 +1,28 @@
 import React from 'react';
+import DisplayComponent from './DisplayComponent';
 
+ 
 function Component(props){
-    const {} = props;
-    
+    const {title, subtitle,info,boxColor} = props;
+
+    const boxComponent = colorBox.map(
+        colorBox =>
+        <Box key={box.title}
+        title={box.title}
+        subtitle={box.subtitle}
+        info={box.info}
+        boxColor= {box.boxColor}/>
+    )
+
+
     return(
+
+        {boxComponent}
         
-        <div className={boxColor}>
-            <h2>{title}</h2>
-            <h3>{subtitle}</h3>
-            <body>{info}</body>
+       
             
-        </div> 
+      
            
            )
-    }
+    };
 export default Component;

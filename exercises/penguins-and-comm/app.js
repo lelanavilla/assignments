@@ -13,12 +13,12 @@ class Party {
 
 
 
-let penguins = new Party("penguins", 1000000);
+const penguins = new Party("penguins", 1000000);
 penguins.flipACoin();
 
 let communists = new Party("communists", 1000000);
 
-flipACoin = () => {
+const flipACoin = () => {
     let whoStarts = Math.floor(Math.random * 2);
     if (whoStarts === 1) {
         console.log('The penguins send out a nuke!')
@@ -30,7 +30,7 @@ flipACoin = () => {
 
 
 }
-const sendNuke() => {
+const sendNuke= () => {
     let randomNum = Math.floor(Math.random * 2);
     if (randomNum === 1) {
         console.log(`${this.party}'s nuke hits main land, devastating the enemy population!`);
@@ -62,6 +62,6 @@ const sendNuke() => {
 
 
 };
-while (player.population > 0) {
+while (this.time > 0) {
     flipCoin();
 }

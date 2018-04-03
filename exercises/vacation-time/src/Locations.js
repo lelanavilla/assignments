@@ -1,23 +1,24 @@
 import React from 'react';
-import LocationsData from './locations.json';
-import Location from './Location';
+import locationsData from './locations.json';
+import Card from './Card';
 
-function Locations(){
-    const locationsObj =LocationsData
-            .map(locationsObj => 
-            <Location>
-            key={locationsObj.place} 
-            place = {locationsObj.place}
-            price= {locationsObj.price}
-            timeToGo = {locationsObj.timeToGo}>
-            </Location>
-            
-            )
+function Locations(props) {
+    const locations = locationsData
+        .map(locationObj =>
+            <Card
+                key={locationObj.place}
+                img={locationObj.img}
+                place={locationObj.place}
+                price={locationObj.price}
+                timeToGo={locationObj.timeToGo}>
+            </Card>
+
+        )
     return (
         <div>
-            {locationsObj}
-            </div>
+            {locations}
+        </div>
     )
-    };
-    
-    export default Locations;
+};
+
+export default Locations;
