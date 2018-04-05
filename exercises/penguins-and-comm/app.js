@@ -1,22 +1,25 @@
-class Party {
+
+class Party[
+     {
     constructor(name, population) {
         this.name = "name";
-        this.population = population;
+        this.population = 0;
     }
+    flipACoin()
 
-    sendNuke() {
-        console.log(`Looks like the ${this.name} party is prepping a nuke`);
-    }
+    // sendNuke() {
+        // console.log(`Looks like the ${this.name} party is prepping a nuke`);
+    // }
 
-}
-
-
+// }
 
 
-const penguins = new Party("penguins", 1000000);
-penguins.flipACoin();
 
-let communists = new Party("communists", 1000000);
+
+// const penguins = new Party("penguins", 1000000);
+
+
+// let communists = new Party("communists", 1000000);
 
 const flipACoin = () => {
     let whoStarts = Math.floor(Math.random * 2);
@@ -24,7 +27,8 @@ const flipACoin = () => {
         console.log('The penguins send out a nuke!')
         sendNuke();
     } else {
-        communists.sendNuke();
+        console.log('The communists send out a nuke');
+        sendNuke();
     };
 
 
@@ -62,6 +66,6 @@ const sendNuke= () => {
 
 
 };
-while (this.time > 0) {
+while (Party.population > 0) {
     flipCoin();
 }
