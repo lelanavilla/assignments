@@ -8,7 +8,7 @@ class DataContainer extends Component{
         super(props);
         this.state={
             people:[],
-            loading:false
+           
         
         }
     }
@@ -18,9 +18,9 @@ class DataContainer extends Component{
              const {results}= response.data;
              this.setState({
                  people:results
-             })
+             });
              render()
-             const {people}
+              const people = {people}
            }
         
         

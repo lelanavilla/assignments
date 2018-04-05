@@ -4,8 +4,8 @@ import Person from './Person';
 
 function DataList (props){
     const{people}=props;
-    const peopleComponents = people.map(person,i)=> 
-    <Person key={person.name +i} name={person.name} {...person}/>
+    const peopleComponents = people.map(person,i => {
+    <Person key={person.name +i}{...person}/>
 
     return
     (
@@ -13,8 +13,7 @@ function DataList (props){
             {peopleComponents}
             </ul>
     )
-};
-export default DataList;
-
+})
+}
 
 export default DataList;
