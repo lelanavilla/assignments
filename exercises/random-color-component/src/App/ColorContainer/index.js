@@ -9,7 +9,7 @@ class ColorContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            new_color: ""
+            colors: []
         }
     }
 
@@ -30,7 +30,7 @@ class ColorContainer extends Component {
        
             
                 return (
-                    <ColorList colors={new_color}></ColorList>
+                    <ColorList color={new_color}></ColorList>
                 )
             }
         }

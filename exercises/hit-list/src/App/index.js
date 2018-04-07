@@ -4,7 +4,7 @@ import DataContainer from './DataContainer';
 
 function App (props){
     return(
-        <div>
+        <div className="app-container">
             <DataContainer/>
             </div>
     )

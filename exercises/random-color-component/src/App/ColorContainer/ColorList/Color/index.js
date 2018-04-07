@@ -4,8 +4,9 @@ function Color(props) {
     console.log(props);
     const { new_color } = props;
     return (
-        
-            {Color}
+        <div className="the-color" style={props.new_color}>
+
+        </div>
         
     )
 };
