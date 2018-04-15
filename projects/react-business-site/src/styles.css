@@ -210,6 +210,10 @@ h5 {
     display: relative;
 }
 
+form {
+    background-color: crimson;
+}
+
 button {
     background-color: black;
     width: 200px;

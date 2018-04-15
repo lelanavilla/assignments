@@ -1,26 +1,22 @@
-import React from 'react';
+import React from "react";
+// import {Switch, Route} from "react-router-dom";
+import Header from "./Header";
+import Footer from "./Footer";
+import Home from "./Home/index.js";
+// import SideBar from './SideBar';
+// import CharactersList from './CharacterList';
+// import CharacterDetails from "./CharactersDetails";
 
-//import router stuff
-import{Switch, Route}from "react-router-dom";
 
-import Header from './Header';
-import Footer from './Footer';
-
-function App(props){
-    return(
-        <div className="app-wrapper">
-            <Header> </Header>
-            <div className="content-wrapper">
-            <Switch> 
-                <Route exact path="/" component={Home}></Route>
-                <Route  exact path="/about" component={About}></Route>
-                <Route exact path="/services" component={Services}></Route>
-                <Route  path="/services/:serviceId" component={ServicesDetails}></Route>
-            </Switch>
-            </div>
-
-            <Footer/>
-            </div>
+function App() {
+    return (
+        <div>
+            <Header />
+            <Home></Home>
+            <Footer />
+        </div>
     )
 };
-export default App;
+
+
+export default App; 

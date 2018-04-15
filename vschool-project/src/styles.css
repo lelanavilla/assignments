@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    display: flex;
+}
+
+.header {
+    background-image: url('http://www.dqchannels.com/wp-content/uploads/2017/07/colorful-audio-video-led-bars-website-header.jpg');
+    height: 150px;
+    color: white;
+    width: 100%;
+}
+
+h1 {}

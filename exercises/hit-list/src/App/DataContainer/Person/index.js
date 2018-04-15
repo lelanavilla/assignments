@@ -4,8 +4,10 @@ function Person(props){
     const{name, image} = props;
     return(
         <li>
-         <img> src={props.image}</img>
-            <h1>{props.name}</h1>
+            <div className="img-container">
+         <img src={image} alt='' className="img"/>
+            <h1>{name}</h1>
+            </div>
             </li>
 
 

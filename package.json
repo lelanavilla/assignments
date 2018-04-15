@@ -1,0 +1,24 @@
+{
+  "name": "assignments",
+  "version": "1.0.0",
+  "description": "This is my V School assignments folder. It contains all my homework and stuff.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lelanavilla/assignments.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lelanavilla/assignments/issues"
+  },
+  "homepage": "https://github.com/lelanavilla/assignments#readme",
+  "dependencies": {
+    "p5": "^0.6.0",
+    "yarn": "^1.5.1"
+  }
+}

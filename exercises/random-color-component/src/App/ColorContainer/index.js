@@ -14,11 +14,11 @@ class ColorContainer extends Component {
     }
 
     componentDidMount() {
-        axios.get(colorApiUrl + "new_color")
+        axios.get(colorApiUrl + "random")
             .then(response => {
                 const { results } = response.data;
                 this.setState({
-                    new_color: results,
+                    hex: results,
                    
                 })
             })
@@ -26,11 +26,11 @@ class ColorContainer extends Component {
             
     }
     render() {
-        const {new_color} = this.state;
+        const {hex} = this.state;
        
             
                 return (
-                    <ColorList color={new_color}></ColorList>
+                    <ColorList color={hex}></ColorList>
                 )
             }
         }

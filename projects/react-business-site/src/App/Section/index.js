@@ -1,12 +1,12 @@
-// import React from "react";
+import React from "react";
 
 
-// function Section(){
-//     return(
-// <div>
+function Section(){
+    return(
+<div>
 
-//         <Booking></Booking>
-//         </div>
-//     )
-// };
-// export default Section;
+        <Booking></Booking>
+        </div>
+    )
+};
+export default Section;
