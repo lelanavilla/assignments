@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import{getWeatherData} from'../redux';
+// import {comments} from '../redux/Sayings';
+// import {Link} from 'react-router-dom';
+import Sayings from "./Sayings.js";
+
 
 class Weather extends Component {
     constructor(props){
@@ -26,19 +30,20 @@ class Weather extends Component {
    
     render() {
         console.log("props",this.props);
-        const{description,temp,humidity,temp_min, temp_max}= this.props.main;
-        
+        const{ description,temp,humidity,temp_min, temp_max}= this.props.main;
         let display;
         if (this.props.loading) {
             display = <h2>Just a little bit longer</h2>
-        } else if (this.props) {
+        } else if (temp) {
             display = <div className="results-displayed">
                 <div className="small-temp">
                     <h1>Current Temperature:</h1></div>
-                <h2 className="big-number">{temp}</h2>
-            <h3>{description}</h3>
-            <h4>{temp_min}/{temp_max}</h4>
-            <h5>{humidity}</h5>
+                <h2 className="big-number" id="temp-number">{temp}</h2>
+            <h3 id="description">{description}</h3>
+            {/* <div className="my-comment">{comments}</div> */}
+            <Sayings temp={temp}></Sayings>
+            <h4 id="hi-low-temps">{temp_min}/{temp_max}</h4>
+            <h5 id="humidity">{humidity}</h5>
             </div>
         } else {
             display = null;
@@ -62,7 +67,13 @@ class Weather extends Component {
                 <br/>
                 <button>GO</button>
      </form>
-   
+     <div className="buttons">
+     <div class="headshot img-1"></div>
+     <div class="headshot img-2"></div>
+     </div>
+
+  {/* <Link to="/unusualPlaces" <div className="random-cool-places"> */}
+       {/* <button id="cool-places">Enter */}
      </div>
 
      </div>

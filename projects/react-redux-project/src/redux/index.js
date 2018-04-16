@@ -5,6 +5,7 @@ import thunk from 'redux-thunk';
 
 
 
+
 export function getWeatherData(locationStr) {
     return dispatch => {
         dispatch({

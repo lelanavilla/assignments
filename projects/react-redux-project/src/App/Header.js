@@ -4,8 +4,9 @@ function Header() {
     return (
         <div>
             <header>
-                <h1> Weather App</h1>
-                </header>
+                <h1> Whether</h1>
+            </header>
+  
         </div>
     )
 }
