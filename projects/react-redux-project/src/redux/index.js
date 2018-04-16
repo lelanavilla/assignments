@@ -13,14 +13,14 @@ export function getWeatherData(locationStr) {
         })
 
 
-        const openWeatherBaseUrl = "http://api.openweathermap.org/data/2.5/weather?units=imperial";
+        const openWeatherBaseUrl = "https://api.openweathermap.org/data/2.5/weather?units=imperial";
         const openWeatherApiKey = "&APPID=36efdd253e8c7e420cf8fabc76fedcd3&q=";
 
         const openWeatherUrl = `${openWeatherBaseUrl}${openWeatherApiKey}${locationStr}`;
         console.log(openWeatherUrl);
         axios.get(openWeatherUrl)
             .then(response => {
-                // console.log(response.data);
+                console.log(response.data);
                 // const detail = response.data.weather.main;
                 // const main = response.data.main;
                 dispatch({

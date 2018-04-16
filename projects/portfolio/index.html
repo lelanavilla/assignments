@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Lelana Villa Software Developer</title>
 
 </head>
@@ -13,7 +15,7 @@
 <body>
     <div>
         <button class="nav-toggle" data-menustate="closed">
-            <svg class="icon icon--menu" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <svg class="icon icon--menu" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" color="black">
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
             </svg>
@@ -29,12 +31,15 @@
         <a href="#" style="--delay: .5s">Resume</a>
         <a href="#" style="--delay: .45s">Contact</a>
 
+        <div className="social-media-icons">
+            <i> <a href="www.linkedin.com/in/lelanavilla" className="fa fa-linkedin"></a></i>
+        </div>
     </nav>
     <header class="header" data-menustate="closed">
         <div class="grid-item  grid-item--primary">
             <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c5008952226f48ed4bf5d3ea64ff545&auto=format&fit=crop&w=1350&q=80" class="object-fit" alt="computer-area">
             <a href="#" class="logo">
-                <h1>Work with Me</h1>
+                <!-- <h1 class="work-with-me">Work with Me</h1> -->
             </a>
         </div>
         <div class="grid-item grid-item--secondary  grid-item--content">
@@ -56,6 +61,7 @@
         <div class="grid-item grid-item--tertiary grid-item--content">
             <article class="article">
                 <p>Site created with React, React Router, Javascript, HTML5 & CSS</p>
+                <!--photo credit icon-->
                 <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:10px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;"
                     href="https://unsplash.com/@carlheyerdahl?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Carl Heyerdahl">
                     <span style="display:inline-block;padding:2px 3px;">
@@ -67,6 +73,7 @@
                     </span>
                     <span style="display:inline-block;padding:2px 3px;">Carl Heyerdahl</span>
                 </a>
+                <!--end of photo credit icon-->
             </article>
         </div>
         <div class="grid-item grid-item--tertiary">
