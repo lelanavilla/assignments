@@ -199,6 +199,9 @@
             .nav {
                 width: 100%;
             }
+            #resume-overlay {
+                width: 70%
+            }
         }
         
         .nav a {
@@ -587,4 +590,41 @@
         
         .fa-codepen {
             color: white;
+        }
+        
+        #resume-page {
+            background-color: rgb(165, 163, 163);
+            color: rgb(1, 31, 31);
+            max-width: 100%;
+            min-height: 100%;
+            position: relative;
+        }
+        
+        #resume-overlay {
+            padding: 20px;
+            margin: 70px;
+            max-width: 90%;
+            min-height: 100%;
+            background-color: white;
+            align-content: center;
+            position: relative;
+        }
+        
+        .resume-block {
+            background-color: teal;
+            color: white;
+            display: grid;
+            width: 60%;
+            height: 200px;
+            margin-left: 200px;
+            position: relative;
+            margin-top: 0px;
+            padding: 0;
+        }
+        
+        .resume-title {
+            text-align: center;
+            position: relative;
+            margin-top: 50px;
+            font-size: 80px;
         }

@@ -1,4 +1,4 @@
-const express =  require("express");
+    const express =  require("express");
 const app = express();
 const uuid = require("uuid");
 const bodyParser = require("body-parser");
@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 //routes
 app.route("/todos")
 .get((req, res) => {
-    res.status(200).send(todos);``
+    res.status(200).send(todos);
 })
 //post request:
 //consvert request body to JSON
@@ -54,7 +54,7 @@ app.route("/todos/:id")
     //Array.from(newSet(todos))
     //or try regEx
 
-     todos_ = todos.filter(todo => todo._id !== id);
+     todos = todos.filter(todo => todo._id !== id);
     //send back the message the todo was removed
     res.status(204).send();
 })
