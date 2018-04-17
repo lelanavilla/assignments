@@ -9,26 +9,26 @@ function Sayings(props) {
         between91And100: ["An I WISH WE HAD A POOL DAY", "Hopefully your air conditioner works", "Its a GET OFF YOUR ASS, AND GO OUTSIDE DAY!"],
         over100: ["I'm melting!!!", " Mother Nature Hates You", "Definitely a day you WISHED you lived ANYWHERE ELSE!", "FORECAST TODAY: 100% chance of skin cancer!"]
     }
-
+    // const genIndex = (arr)=> Math.floo
     // const comment = () => 
     let comment;
     if (temp <= 40) {
-        comment = tempSayings.under40[Math.floor(Math.random()) * tempSayings.under40.length];
+        comment = tempSayings.under40[Math.floor(Math.random() * tempSayings.under40.length)];
     }
     else if(temp >=41 && temp <= 70) {
-        comment = tempSayings.between41And70[Math.floor(Math.random()) * tempSayings.between41And70.length];
+        comment = tempSayings.between41And70[Math.floor(Math.random() * tempSayings.between41And70.length)];
     }
     else if (temp >= 71 && temp <= 90){
-        comment = tempSayings.between71And90[Math.floor(Math.random()) * tempSayings.between71And90.length];
+        comment = tempSayings.between71And90[Math.floor(Math.random() * tempSayings.between71And90.length)];
 
     }else if(temp <=91 && temp <= 100){
-        comment = tempSayings.between91And100[Math.floor(Math.random()) * tempSayings.between91And100.length];
+        comment = tempSayings.between91And100[Math.floor(Math.random() * tempSayings.between91And100.length)];
 
     }else if (temp >100){
-        comment = tempSayings.over100[Math.floor(Math.random()) * tempSayings.over100.length];
+        comment = tempSayings.over100[Math.floor(Math.random() * tempSayings.over100.length)];
 
     }
-
+    console.log(comment);
     return (
         <div className="my-comment">
             {comment}

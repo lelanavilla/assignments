@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+
 import { connect } from 'react-redux';
 import { getWeatherData } from '../redux';
 // import {comments} from '../redux/Sayings';
@@ -29,7 +31,6 @@ class Weather extends Component {
     }
 
     render() {
-        console.log("props", this.props);
         const { temp, temp_min, temp_max } = this.props.main;
         const description= this.props.weather;
         let display;
@@ -75,11 +76,13 @@ class Weather extends Component {
      <div class="headshot img-1"></div>
      <div class="headshot img-2"></div>
      </div> */}
-
                         {/* <Link to="/unusualPlaces" <div className="random-cool-places"> */}
                         {/* <button id="cool-places">Enter */}
                     </div>
-
+                    <div className="link-area">
+              
+                <Link to="/about" id=" about-link">About</Link>
+               </div>
                 </div>
                 {display}
             </div>

@@ -17,10 +17,8 @@ export function getWeatherData(locationStr) {
         const openWeatherApiKey = "&APPID=36efdd253e8c7e420cf8fabc76fedcd3&q=";
 
         const openWeatherUrl = `${openWeatherBaseUrl}${openWeatherApiKey}${locationStr}`;
-        console.log(openWeatherUrl);
         axios.get(openWeatherUrl)
             .then(response => {
-                console.log(response.data);
                 // const detail = response.data.weather.main;
                 // const main = response.data.main;
                 dispatch({
@@ -40,7 +38,6 @@ const initialState = {
 }
 
 function reducer(state = initialState, action) {
-    console.log(action);
     switch (action.type) {
         case "GET_WEATHER_DATA":
             return {
