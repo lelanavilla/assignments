@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/lelanavilla/assignments#readme",
   "dependencies": {
+    "jquery": "^3.3.1",
     "p5": "^0.6.0",
+    "turn.js": "^1.0.5",
     "yarn": "^1.5.1"
   }
 }

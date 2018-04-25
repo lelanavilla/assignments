@@ -1,16 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css" />
-    <title>Lelana Villa's Portfolio</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lelana Villas Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link src="portfolio.css" rel="stylesheet" />
 </head>
 
-<body>
-    <p>Im the portfolio page</p>
+<body class="body">
+    <div class="portfolio-wrapper">
+        <div id="projects-display-area">
+            <div class="project-container">
+                <h2 id=" projects-main-title">Full Stack Projects</h2>
+                <br/>
+                <ul id="projects-unordered-list">
+                    <li class="individual-project-area">
+                        <div class="project-presentation-image"> <img href="#" alt="Esko PhotoGraphy Portfolio/Website" /></div>
+                        <h3 id="esko-project">Professional Photography Portfolio for Esko Photography in Las Vegas, Nevada</h3>
+                        <h4 class="subtitle">Full Stack Website created with React/Redux/React-Router/MongoDB/Mongoose/Node</h4>
+                        <div class="software-used">Create with React, React-Router, Redux, MongoDB, Mongoose, Express </p>
+                            <br/>
+                            <p>Requirements for this site:</p>
+                            <ul>
+                                <li>Site must provide the owner with a way to add work to his portfolio himself.</li>
+                                <li>Work added must automatically be included to the portfolio page.</li>
+                                <li>A booking application for site must be created that notifies the owner when a potential client schedules a booking.</li>
+                                <li>Site must visually represent the companies image, with bright contrasts, and a landing page that grabs your attention, but isnt crowded. </li>
+                            </ul>
+                            <p>
+
+                                For this project I built a server, and created a private API with mongoDB, mongoose, and express, so I could call this API to populate the portfolio page with the photographers images, and provide the ability to add more images. The owner didnt want to
+                                have to sign into the site to add images, and didnt want anything on the site that suggested that this option even existed. The site also required the creation of a booking application so potential clients could when schedule
+                                appointments, and the notification be automatically sent to the owner by email.
+
+                            </p>
+                            <p>Some of the difficulties I had while creating this site was finding a unique way to present the images in the owners portfolio, that wasnt just on a normal 2d plane. I decided to use the turn.js library to create the 3d magazine
+                                with the owners images on the pages. Getting the state changes that occur with each "turn of the page" in turn.js was tricky but I think using React, Redux, and React Router was the best decision, as I had much more control
+                                of the state. page for him.
+                            </p>
+                            <br/>
+
+                    </li>
+                    <li class="individual-project-area">
+                        <div class="project-presentation-image"> <img href="#" alt="Esko PhotoGraphy Portfolio/Website" /></div>
+                        <h3 id="esko-project">ASK GOO GOO
+                            <h4 class="subtitle">Full Stack Website created with React/Redux/React-Router/MongoDB/Mongoose/Node</h4>
+                            <br/>
+
+                    </li>
+                </ul>
+                <div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    </div>
 </body>
 
 </html>

@@ -552,46 +552,6 @@
         .connect-with-me {}
         /* SOCIAL MEDIA ICON SECTION*/
         
-        .social-media-icon-section {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-        
-        .fa {
-            padding: 10px;
-            font-size: 20px;
-            width: 15px;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 50%;
-        }
-        /*icon set styling*/
-        /* .fa {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background-color: rgb(131, 186, 186);
-        color: white;
-    }
-    /* Add a hover effect if you want */
-        /* .fa:hover {
-        opacity: 0.7;
-    } */
-        /*SPECIFIC ICON STYLING*/
-        
-        .fa-linkedin {
-            color: white;
-        }
-        
-        .fa-github {
-            color: white;
-        }
-        
-        .fa-codepen {
-            color: white;
-        }
-        
         #resume-page {
             background-color: rgb(165, 163, 163);
             color: rgb(1, 31, 31);

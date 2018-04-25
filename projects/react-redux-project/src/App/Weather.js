@@ -80,7 +80,8 @@ class Weather extends Component {
                         {/* <button id="cool-places">Enter */}
                     </div>
                     <div className="link-area">
-              
+            
+
                 <Link to="/about" id=" about-link">About</Link>
                </div>
                 </div>

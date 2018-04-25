@@ -11,3 +11,9 @@ document.body.children[0].addEventListener("click", event => {
     }
   });
   
+  $("#flipbook").turn({
+    width: 400,
+    height: 300,
+    autoCenter: true
+});
+  

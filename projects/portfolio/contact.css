@@ -1,0 +1,144 @@
+body {
+    max-width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+.contact-page-header {
+    max-width: 100%;
+    height: 400px;
+    background-color: teal;
+}
+
+.work-with-me {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    letter-spacing: .15em;
+    text-shadow: 2px 5px rgb(90, 90, 78);
+}
+
+.icon-section {
+    max-width: 75%;
+    height: 500px;
+    color: white;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.address-info-block {
+    display: grid;
+    height: 250px;
+    font-size: 1em;
+    margin-left: 80px;
+    word-wrap: wrap none;
+    text-align: center;
+}
+
+.fa-address-card {
+    color: white;
+    font-size: 26px;
+    position: relative;
+}
+
+.address-info {
+    font-size: 20px;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.address-title {
+    font-family: "Roboto", sans-serif;
+}
+
+.phone-info-block {}
+
+.fa-mobile {}
+
+.phone-info {}
+
+.phone-title {}
+
+.email-info-block {}
+
+.fa-email {}
+
+.email-info {}
+
+.email-title {}
+
+.social-media-title {}
+
+.connect-with-me {}
+
+.social-media-icon-section {}
+
+.social-media-icons {}
+
+.fa-linkedin-square {}
+
+.fa-github {}
+
+.fa-codepen {}
+
+
+/*SOCIAL MEDIA ICON PLACEMENT*/
+
+.social-media-icon-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* .fa {
+    padding: 10px;
+    font-size: 60px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+} */
+
+
+/*icon set styling*/
+
+.icon-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(131, 186, 186);
+    color: white;
+}
+
+.fa {
+    position: relative;
+    font-size: 48px;
+    color: white;
+}
+
+
+/* Add a hover effect if you want */
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+/*SPECIFIC ICON STYLING*/
+
+.fa-linkedin {
+    width: 100px;
+    height: 100px;
+}
+
+.fa-github {
+    color: white;
+}
+
+.fa-codepen {
+    color: white;
+}
