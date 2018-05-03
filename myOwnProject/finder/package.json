@@ -1,0 +1,25 @@
+{
+    "name": "venue-finder",
+    "version": "1.0.0",
+    "description": "wedding venue finder",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com/lelanavilla/assignments"
+    },
+    "author": "lelana villa",
+    "license": "ISC",
+    "dependencies": {
+        "browserify": "^16.2.0",
+        "express": "^4.16.3",
+        "guid": "0.0.12",
+        "gulp": "^3.9.1",
+        "react": "^16.3.2",
+        "react-dom": "^16.3.2",
+        "reactify": "^1.1.1",
+        "vinyl-source-stream": "^2.0.0"
+    }
+}

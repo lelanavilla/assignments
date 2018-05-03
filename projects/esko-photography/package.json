@@ -1,0 +1,42 @@
+{
+  "name": "esko-photography",
+  "version": "1.0.0",
+  "description": "Professiona Website of Esko Photography, Las Vegas, Nevada",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lelanavilla/esko-photography-site.git"
+  },
+  "keywords": [
+    "esko",
+    "photgraphy",
+    "derek",
+    "eskridge",
+    "eskobruhh",
+    "las",
+    "vegas",
+    "photographer",
+    "portfolio",
+    "of",
+    "derek",
+    "eskridge"
+  ],
+  "author": "lelana villa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lelanavilla/esko-photography-site/issues"
+  },
+  "homepage": "https://github.com/lelanavilla/esko-photography-site#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "middleware": "^1.0.0",
+    "mongoose": "^5.0.16",
+    "morgan": "^1.9.0",
+    "uuid": "^3.2.1"
+  }
+}

@@ -1,12 +1,16 @@
 const express = require("express");
+
 const bodyParser = require("body-parser");
+
 const mongoose = require("mongoose");
+
 const logger = require("./middleware/logger.js");
-const votesRouter = require("./routes/votes.js");
+
+const postRouter = require("./routes/posts.js");
 
 
 const app = express();
-const port = 3001;
+const port = 8080;
 
 
 app.use(bodyParser.json());
@@ -14,7 +18,6 @@ app.use(logger);
 
 
 
-app.use("/votes", votesRouter);
 app.use("/posts", postRouter);
 
 

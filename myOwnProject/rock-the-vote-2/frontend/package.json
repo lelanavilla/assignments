@@ -1,0 +1,26 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com/lelanavilla"
+  },
+  "keywords": [
+    "rock",
+    "the",
+    "vote",
+    "vschool",
+    "project",
+    "forum"
+  ],
+  "author": "lelana villa",
+  "license": "ISC",
+  "dependencies": {
+    "create-react-app": "^1.5.2"
+  }
+}
