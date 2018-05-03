@@ -29,6 +29,7 @@ class ImageList extends Component {
 }
 function mapStateToProps({ images }) {
     return { images }
+    
 
 }
 export default connect(mapStateToProps, { getImages })(ImageList);

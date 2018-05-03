@@ -39,6 +39,7 @@ export function getImages(){
                 type: "GET_IMAGES",
                 images:response.data
             })
+            console.log(response.data);
         })
         .catch(err => {
             dispatch({

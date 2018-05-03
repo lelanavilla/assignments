@@ -6,8 +6,8 @@ function Images(props){
     return (
      
             <div className="image-wrapper">
-            <div class="grid">
-  <div class="grid-sizer"></div>
+            <div className="grid">
+  <div className="grid-sizer"></div>
                             <ImageList/>
         </div>
         </div>
