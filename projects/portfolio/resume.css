@@ -18,13 +18,33 @@ body {
     max-width: 98%;
     /* background-color: white; */
 
-.professional-section {
+.info-sidebar {
+    display: block;
     background-color: teal;
-    max-width: 100%;
-    min-height: 100%;
-    height: 300px;
+    max-width: 25%;
     padding: 0;
-    /* margin-left: 10px; */
+    margin-left: 10px;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+.pic {
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 30px;
+    margin-left: 45px;
+    /* position: absolute; */
+}
+
+#name {
+    font-size: 34px;
 }
 
 h2 {
@@ -34,18 +54,17 @@ h2 {
 .jobs {
     max-width: 100%;
     min-height: 100%;
-    position: absolute;
-    top: 50px;
     margin-left: 10px;
     line-height: .25em;
-    color: white;
+    color: black;
 }
 
 .job1 {
     position: relative;
-    margin-top: 30px;
 }
 
+
+/* 
 .title {}
 
 .job-title {}
@@ -56,7 +75,7 @@ h2 {
 
 .description {}
 
-.job2 {}
+.job2 {} */
 
 .achievement-section {
     text-align: center;
@@ -87,9 +106,3 @@ h2 {
     margin-bottom: 0;
     /* margin-left: 10px; */
 }
-
-.school-name {}
-
-.major {}
-
-.year {}
